@@ -1,0 +1,127 @@
+/* EEG Denoising Review - Custom Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #24292e;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 2px solid #24292e;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #e1e4e8;
+    padding-bottom: 8px;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 24px;
+}
+
+h4 {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 16px 0;
+    font-size: 12px;
+    overflow-x: auto;
+    display: block;
+}
+
+thead {
+    background-color: #f6f8fa;
+}
+
+th, td {
+    border: 1px solid #d1d5da;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+tr:nth-child(even) {
+    background-color: #fafbfc;
+}
+
+tr:hover {
+    background-color: #f1f8ff;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 4px solid #d1d5da;
+    padding-left: 16px;
+    color: #6a737d;
+    margin: 16px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e1e4e8;
+    margin: 24px 0;
+}
+
+code {
+    background-color: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+pre {
+    background-color: #f6f8fa;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 12px;
+}
+
+.checkmark {
+    color: #28a745;
+}
+
+.cross {
+    color: #dc3545;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px 20px;
+        font-size: 13px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 6px 8px;
+    }
+}
