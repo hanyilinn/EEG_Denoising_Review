@@ -141,7 +141,7 @@
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
 | 1 | - | 2021 | 少通道SSVEP，自采10例数据，比较了无EMG参考的BSS方法和有辅助的EMG方法 | Muscle Artifact Removal Toward Mobile SSVEP-Based BCI: A Comparative Study | IEEE TIM | - | University of Science and Technology of China | - |
 | 2 | - | 2023 | 评估伪迹去除对于基于CNN的异常和正常脑电图数据分类算法性能的影响 | The effect of artifact rejection on the performance of a convolutional neural network based algorithm for binary EEG data classification | BSPC | - | Amsterdam UMC location University of Amsterdam | - |
-| 3 | Diff-SleepNet | 2024 | 基于DDPM的信号去噪模块，在去噪数据集上预训练，在迁移到睡眠数据集上微调，基于短时傅里叶变换和Transformer组合的特征提取模块，多模态融合模块 | Sleep Stage Classification with Multi-Modal Fusion and Denoising Diffusion Model | IEEE JBHI | https://github.com/Odysseus0816/Diff-SleepNet | Dalian University of Technology | 空链接 |
+| 3 | Diff-SleepNet | 2024 | 基于DDPM的信号去噪模块，在去噪数据集上预训练，在迁移到睡眠数据集上微调，基于短时傅里叶变换和Transformer组合的特征提取模块，多模态融合模块 | Sleep Stage Classification with Multi-Modal Fusion and Denoising Diffusion Model | IEEE JBHI | [是](https://github.com/Odysseus0816/Diff-SleepNet) | Dalian University of Technology | 空链接 |
 | 4 | TOED-GAN | 2024 | 任务导向，面向BCI实际场景，有自采数据集，模拟移动场景、故意加了更多噪声，基于GAN，生成器U-Net | Task-oriented EEG denoising generative adversarial network for enhancing SSVEP-BCI performance | JNE | 否 | National University of Defense Technology | 通讯作者胡德文院士 |
 | 5 | FDC-Net | 2025 | EEG去噪任务和多维情绪解码 | FDC-Net: Rethinking the association between EEG artifact removal and multi-dimensional affective computing | Arxiv | 是 | Beijing University of Technology | - |
 | 6 | TOL | 2026 | 通过盲源分离分解EEG成分，学习型选择器预测保留概率并加权重建；借助下游任务损失协同优化，仅需任务标签、无需干净参考。 | Task-Oriented Learning for Automatic EEG Denoising | IEEE TIM | 否 | 中国科学院自动化研究所 | - |
