@@ -263,7 +263,40 @@
 
 ## 7. EEG去噪研究适合使用的数据集 (EEG Denoising Datasets)
 
-> 内容待补充
+> 共收录 **3** 条数据集
+
+### 7.1 EEGdenoiseNet
+
+| 属性 | 内容 |
+|:---:|:---|
+| 文献名称 | EEGdenoiseNet: A benchmark dataset for deep learning solutions of EEG denoising |
+| 发表期刊 | Journal of Neural Engineering, Vol. 18, No. 5, p. 056057, 2021 |
+| 包含噪声类型 | EOG（眼电）、EMG（肌电） |
+| 单通道/多通道 | 单通道 |
+| 数据量 | 干净EEG片段：4514个；EMG片段：5598个；EOG片段：3400个 |
+| 预处理情况 | 每个片段长度为512个采样点，对应2秒（采样率256 Hz） |
+
+### 7.2 MIT-BIH心律失常数据集
+
+| 属性 | 内容 |
+|:---:|:---|
+| 文献名称 | The impact of the MIT-BIH arrhythmia database / PhysioBank, PhysioToolkit, and PhysioNet: components of a new research resource for complex physiologic signals |
+| 发表期刊 | IEEE Engineering in Medicine and Biology Magazine, 2001; Circulation, 2000 |
+| 包含噪声类型 | ECG（心电） |
+| 单通道/多通道 | 单通道 |
+| 数据量 | 3600个ECG片段 |
+| 预处理情况 | ECG信号经45 Hz低通滤波，重采样至256 Hz，并切割为2秒片段 |
+
+### 7.3 运动伪迹数据集（Kevin T. Sweeney 提供）
+
+| 属性 | 内容 |
+|:---:|:---|
+| 文献名称 | A methodology for validating artifact removal techniques for physiological signals |
+| 发表期刊 | IEEE Transactions on Information Technology in Biomedicine, Vol. 16, No. 5, pp. 918-926, 2012 |
+| 包含噪声类型 | 运动伪迹 |
+| 单通道/多通道 | 单通道 |
+| 数据量 | 2760个运动片段 |
+| 预处理情况 | 重采样至256 Hz，切割为2秒片段 |
 
 ---
 
