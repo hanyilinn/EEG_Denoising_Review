@@ -182,8 +182,8 @@
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
 | 1 | [Advanced Engineering Informatics](https://www.sciencedirect.com/journal/advanced-engineering-informatics) | AdvEI | 一区TOP | 一区TOP | 9.9 | 658 | Elsevier | - |
 | 2 | [IEEE Transactions on Instrumentation and Measurement](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19) | IEEE TIM | 二区 | 二区TOP | 5.9 | 2532 | IEEE | - |
-| 3 | Cogent Engineering | \ | 四区 | 三区 | 2.5 | 356 | Taylor & Francis | - |
-| 4 | Technologies | \ | 三区 | 三区 | 3.6 | 262 | MDPI | - |
+| 3 | [Cogent Engineering](https://www.tandfonline.com/journals/oaen20) | \ | 四区 | 三区 | 2.5 | 356 | Taylor & Francis | - |
+| 4 | [Technologies](https://www.mdpi.com/journal/technologies) | \ | 三区 | 三区 | 3.6 | 262 | MDPI | - |
 
 ### 5.4 综合性期刊
 
