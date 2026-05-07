@@ -129,8 +129,8 @@
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
-| 1 | 综述 | 2015 | EEG伪迹去除技术综述与指南 | [EEG artifact removal—state-of-the-art and guidelines](https://iopscience.iop.org/article/10.1088/1741-2560/12/3/031001/meta) | Journal of Neural Engineering | - | - | - |
-| 2 | 综述 | 2016 | 脑电信号伪迹检测与去除方法综述 | [Methods for artifact detection and removal from scalp EEG: A review](https://www.sciencedirect.com/science/article/pii/S098770531630199X) | Neurophysiologie Clinique/Clinical Neurophysiology | - | - | - |
+| 1 | 综述 | 2015 | EEG伪迹去除技术综述与指南 | [EEG artifact removal—state-of-the-art and guidelines](https://iopscience.iop.org/article/10.1088/1741-2560/12/3/031001/meta) | Journal of Neural Engineering | - | University of Deusto | - |
+| 2 | 综述 | 2016 | 脑电信号伪迹检测与去除方法综述 | [Methods for artifact detection and removal from scalp EEG: A review](https://www.sciencedirect.com/science/article/pii/S098770531630199X) | Neurophysiologie Clinique/Clinical Neurophysiology | - | National University of Singapore | - |
 | 3 | 综述 | 2018 | EEG伪迹与噪声去除文献综述 | [Artifacts and noise removal for electroencephalogram (EEG): A literature review](https://ieeexplore.ieee.org/abstract/document/8405493/) | IEEE Symposium on Computer Applications & Industrial Electronics (ISCAIE) | - | - | - |
 | 4 | 综述 | 2019 | 肌电伪迹去除方法综述与建议 | [Removal of Muscle Artifacts From the EEG: A Review and Recommendations](https://ieeexplore.ieee.org/abstract/document/8672623) | IEEE Sensors Journal | - | - | - |
 | 5 | 综述 | 2019 | EEG伪迹去除综述 | [Removal of artifacts from EEG signals: a review](https://www.mdpi.com/1424-8220/19/5/987) | Sensors | - | - | - |
