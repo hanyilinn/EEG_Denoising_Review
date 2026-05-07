@@ -173,7 +173,7 @@
 | 6 | [IEEE Transactions on Consumer Electronics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30) | IEEE TCE | 二区 | 一区TOP | 10.9 | 699 | IEEE | 自引率52.3% |
 | 7 | [IEEE Transactions on Emerging Topics in Computational Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755) | IEEE TETCI | 二区 | 二区 | 6.5 | 419 | IEEE | - |
 | 8 | [IEEE Transactions on Cognitive and Development systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274989) | IEEE TCDS | 三区 | 二区 | 4.9 | 171 | IEEE | - |
-| 9 | Electronics | - | 四区 | - | 2.6 | 5022 | MDPI | - |
+| 9 | [Electronics](https://www.mdpi.com/journal/electronics) | - | 四区 | - | 2.6 | 5022 | MDPI | - |
 | 10 | [Signal Image and Video Processing](https://www.springer.com/journal/11760) | SIVP | 四区 | - | 2.1 | 634 | Springer | - |
 
 ### 5.3 工程技术
