@@ -125,11 +125,12 @@
 
 ## 3. EEG去噪相关综述 (EEG Denoising Reviews)
 
-> 共收录 **1** 条综述
+> 共收录 **2** 条综述
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
-| 1 | 综述 | 2026 | - | Physiological artifacts removal in EEG signals: a comprehensive overview of conventional to deep learning methods to support brain health monitoring | Cogent Engineering | - | - | 印度马尼帕尔理工学院，综述文章 |
+| 1 | 综述 | 2019 | 肌电伪迹去除方法综述与建议 | [Removal of Muscle Artifacts From the EEG: A Review and Recommendations](https://ieeexplore.ieee.org/abstract/document/8672623) | IEEE JBHI | - | - | - |
+| 2 | 综述 | 2026 | - | Physiological artifacts removal in EEG signals: a comprehensive overview of conventional to deep learning methods to support brain health monitoring | Cogent Engineering | - | - | 印度马尼帕尔理工学院，综述文章 |
 
 ---
 
