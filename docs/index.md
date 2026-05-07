@@ -231,7 +231,7 @@
 | 5 | [IEEE Transactions on Biomedical Circuits and Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4156126) | IEEE TBCS | 二区 | 二区 | 4.9 | 102 | IEEE | - |
 | 6 | [Computer Methods and Programs in Biomedicine](https://www.sciencedirect.com/journal/computer-methods-and-programs-in-biomedicine) | CMPB | 二区 | 二区TOP | 4.8 | 440 | Elsevier | - |
 | 7 | [IEEE Transactions on Medical Robotics and Bionics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8263503) | IEEE TMRB | 三区 | 二区 | 3.8 | 156 | IEEE | - |
-| 8 | Clinical Neurophysiology | - | 三区 | - | 3.6 | 234 | Elsevier | - |
+| 8 | [Clinical Neurophysiology](https://www.sciencedirect.com/journal/clinical-neurophysiology) | - | 三区 | - | 3.6 | 234 | Elsevier | - |
 | 9 | [Frontiers in Neuroscience](https://www.frontiersin.org/journals/neuroscience) | Fron. Neur. | 三区 | - | 3.2 | 1118 | Frontiers | - |
 | 10 | [Cognitive Neurodynamics](https://www.springer.com/journal/11571) | CN | 四区 | 二区 | 3.9 | 126 | Springer | - |
 
