@@ -22,7 +22,7 @@
 
 ### 1.1 时间线总览
 
-> 共收录 **61** 条记录（截至2026年）
+> 共收录 **62** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -32,7 +32,7 @@
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 28 |
-| 2026 | 6 |
+| 2026 | 7 |
 
 ### 1.2 方法详情
 
@@ -102,6 +102,7 @@
 | 62 | Importance of Balance | 2026 | 利用平衡带符号图的谱理论，通过将带符号图的频率线性映射到正图，成功设计了可学习的低通图滤波器，并以极... | Importance of Balance: Lightweight Transformer via Signed Graph Algorithm Unrolling for EEG Signal Denoising | ICASSP2026 | - | Peking University+New York University | - |
 | 63 | FemtoEOGClean | 2026 | 通过参数缩放实验发现眼电去噪在仅需约2000参数时性能即达平台期，并据此设计了至少比同类网络小100... | Femtomodels for EEG Artifact Removal: A Parameter Lower-Bound for Generalisable EOG Denoising | ICASSP2026 | - | - | - |
 | 64 | BandRouteNet | 2026 | 频带感知+全频带上下文的双路径设计，在每个频带内部，引入一个路由机制，能够自适应地决定在哪里（时间位... | BandRouteNet: An Adaptive Band Routing Neural Network for EEG Artifact Removal | Arxiv | - | Ho Chi Minh City University of Technology | 唯一越南作者Phat Lam |
+| 65 | BG-MSCA | 2026 | BiGRU提取时序特征，多尺度交叉注意力（MSCA）模块通过多尺度门控卷积捕获层次化局部特征、多头注意力建模长程全局依赖，经交叉注意力融合跨尺度信息... | [BG-MSCA: Bidirectional GRU with Multi-Scale Cross Attention for EEG signal denoising](https://www.sciencedirect.com/science/article/pii/S1746809426008815) | BSPC | - | - | - |
 
 ---
 
