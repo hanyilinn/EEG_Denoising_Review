@@ -1,3 +1,5 @@
 title: EEG Denoising Review
 markdown: kramdown
 show_downloads: false
+exclude:
+  - README.md

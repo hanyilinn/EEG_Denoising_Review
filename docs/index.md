@@ -1,4 +1,10 @@
-# EEG Denoising Methods & Journals Survey
+---
+layout: default
+title: EEG Denoising Review
+---
+
+## EEG Denoising Methods & Journals Survey
+
 👁️ EEG去噪方法与期刊调研
 
 整理EEG去噪领域的方法、综述、期刊和数据集调研结果，便于快速了解该领域进展。
