@@ -28,17 +28,17 @@ title: EEG Denoising Review
 
 ### 1.1 时间线总览
 
-> 共收录 **62** 条记录（截至2026年）
+> 共收录 **69** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
 | 2020 | 1 |
-| 2021 | 3 |
+| 2021 | 6 |
 | 2022 | 6 |
 | 2023 | 6 |
 | 2024 | 14 |
-| 2025 | 28 |
-| 2026 | 7 |
+| 2025 | 26 |
+| 2026 | 10 |
 
 ### 1.2 方法详情
 
@@ -109,6 +109,10 @@ title: EEG Denoising Review
 | 63 | FemtoEOGClean | 2026 | 通过参数缩放实验发现眼电去噪在仅需约2000参数时性能即达平台期，并据此设计了至少比同类网络小100... | Femtomodels for EEG Artifact Removal: A Parameter Lower-Bound for Generalisable EOG Denoising | ICASSP2026 | - | - | - |
 | 64 | BandRouteNet | 2026 | 频带感知+全频带上下文的双路径设计，在每个频带内部，引入一个路由机制，能够自适应地决定在哪里（时间位... | BandRouteNet: An Adaptive Band Routing Neural Network for EEG Artifact Removal | Arxiv | - | Ho Chi Minh City University of Technology | 唯一越南作者Phat Lam |
 | 65 | BG-MSCA | 2026 | BiGRU提取时序特征，多尺度交叉注意力（MSCA）模块通过多尺度门控卷积捕获层次化局部特征、多头注意力建模长程全局依赖，经交叉注意力融合跨尺度信息... | [BG-MSCA: Bidirectional GRU with Multi-Scale Cross Attention for EEG signal denoising](https://www.sciencedirect.com/science/article/pii/S1746809426008815) | BSPC | - | - | - |
+| 66 | DAR | 2026 | 监督式一维卷积自编码器，使用成对的伪迹污染与MR校正EEG片段进行训练，同时抑制同步EEG-fMRI中的梯度伪迹和心冲击伪迹（BCG），并通过留一受试者验证跨被试泛化... | [Supervised autoencoder for gradient and BCG artifact removal in EEG during simultaneous EEG-fMRI](https://www.sciencedirect.com/science/article/pii/S0730725X26001232) | Magnetic Resonance Imaging | - | Bangladesh University of Engineering and Technology + University of Illinois Chicago + Qatar University | 使用Carbon Wire Loop公开数据集；保留枕区8–12 Hz alpha活动，并结合显著性分析解释模型关注模式 |
+| 67 | FARU-Net | 2026 | 频率感知残差U-Net，在潜在空间通过频率感知瓶颈模块（FBM）进行频谱重校准，并在跳跃连接中加入注意力门控，同时以时域和频域损失约束波形与频谱一致性... | [Dual-Domain Symmetry: A Frequency-Aware Residual U-Net for High-Fidelity EEG Artifact Removal](https://www.mdpi.com/2073-8994/18/6/988) | Symmetry | - | Chengdu University of Technology | 在EEGdenoiseNet上处理单通道EOG/EMG混合伪迹，并在PhysioNet运动想象数据上评估跨数据集频谱保持与下游分类 |
+| 68 | Ultra-Compact DSConv U-Net | 2026 | 固定网络结构、损失、数据划分和训练流程，仅扫描深度可分离卷积U-Net的通道宽度，以隔离模型容量影响；发现重构性能在约3K–6.5K参数后趋于饱和，并检验重构指标与下游BCI效用之间的偏差... | [How Much Capacity Does EEG Denoising Need? Ultra-Compact Networks reveal Benchmark Saturation and Metric-Utility Gap](https://arxiv.org/abs/2606.08594) | Arxiv | - | Indian Institute of Technology Mandi | 容量控制与评测研究，并非单纯追求SOTA；CSP+LDA下去噪反而降低运动想象分类性能，代码声明将在正式发表后公开 |
+| 69 | ET-informed DL | 2026 | 利用同步眼动追踪（ET）信息训练记录内深度学习模型，预测EEG中可由眼动解释的成分；同时结合真实头模型模拟眼动伪迹，以区分眼动相关神经活动、非神经伪迹和其他脑活动... | [Isolating Eye-Movement Artifacts from EEG Signals](https://www.worldscientific.com/doi/abs/10.1142/S0129065726500437) | International Journal of Neural Systems | - | University of South Carolina + University of Southern California | 提供眼动信息辅助的去混杂与评测框架，可用于评估ICA等伪迹隔离方法的敏感度和特异度 |
 
 ---
 
