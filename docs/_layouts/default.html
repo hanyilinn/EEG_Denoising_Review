@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EEG去噪方法、综述、期刊与数据集调研">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <script src="{{ '/app.js' | relative_url }}" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true">EEG</span>
+          <span>
+            <strong>EEG Denoising Review</strong>
+            <small>方法 · 综述 · 期刊 · 数据集</small>
+          </span>
+        </a>
+        <a class="github-link" href="https://github.com/hanyilinn/EEG_Denoising_Review">
+          GitHub 仓库
+        </a>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">EEG DENOISING KNOWLEDGE BASE</p>
+        <h1 id="page-title">EEG 去噪研究导航</h1>
+        <p>集中浏览 EEG 去噪方法、相关综述、投稿期刊与常用数据集。</p>
+      </section>
+
+      <section class="search-panel" aria-label="数据检索工具">
+        <label class="search-box" for="table-search">
+          <span aria-hidden="true">⌕</span>
+          <input
+            id="table-search"
+            type="search"
+            placeholder="检索方法、论文、期刊、机构或备注…"
+            autocomplete="off"
+          >
+        </label>
+        <button id="clear-search" class="clear-button" type="button" hidden>清除</button>
+        <p id="search-status" class="search-status" aria-live="polite">
+          可检索全部表格；点击表头可排序
+        </p>
+      </section>
+
+      <article class="content-card markdown-body">
+        {{ content }}
+      </article>
+    </main>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
+
+    <footer class="site-footer">
+      数据持续更新中 · 欢迎通过 GitHub Issue 或 Pull Request 补充
+    </footer>
+  </body>
+</html>
