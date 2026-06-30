@@ -119,7 +119,7 @@ title: EEG Denoising Review
 
 ## 2. 传统EEG去噪方法 (Traditional EEG Denoising)
 
-> 主要为2025年及之后的研究，共收录 **9** 条记录
+> 主要整理传统/信号处理类方法，共收录 **11** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -132,6 +132,8 @@ title: EEG Denoising Review
 | 7 | GED | 2025 | 广义特征分解（GED）在极端低信噪比条件下（如行走、慢跑时）去除高振幅运动伪影的有效性，并成功将清洗... | Contrast-based artifact removal enables microstate analysis in ambulatory EEG | IEEE TBME | - | The University of British Columbia | 加拿大 不列颠哥伦比亚大学 生物医学工程学院 |
 | 8 | GVICA | 2026 | “GWO优化VMD + 熵筛选ICA”的无参考、多层级自适应去噪框架... | GVICA: A multi-channel EEG hierarchical noise reduction framework based on GWO dynamically optimized VMD-ICA fusion | IEEE TBME | - | Guangdong University of Technology | 引用了ASTI-Net |
 | 9 | GED | 2026 | 利用广义特征分解，通过对比静息态 EEG（干净参考）和运动态 EEG（含伪影）的协方差矩阵，识别并去... | Suppressing Non-Stationary Motion Artefacts in Mobile EEG Using Generalized Eigenvalue Decomposition | Sensors | - | University "G. d'Annunzio" of Chieti-Pescara, Chieti, Italy | 用了打乒乓球的数据 |
+| 10 | Single-channel techniques | 2016 | 比较单通道与多通道肌电伪迹去除思路，主张对多通道EEG逐通道独立去噪也可在低信噪比下优于部分多通道盲源分离方法... | [Removing Muscle Artifacts From EEG Data: Multichannel or Single-Channel Techniques?](https://ieeexplore.ieee.org/document/7349109) | IEEE Sensors Journal | - | Hefei University of Technology + University of British Columbia | 通过仿真和真实肌电污染EEG比较不同策略，强调单通道技术在强肌电污染和低SNR场景中的优势 |
+| 11 | EEMD-CCA | 2019 | 结合集合经验模态分解（EEMD）与典型相关分析（CCA）去除肌电伪迹，先分解非平稳EEG再利用通道间相关信息识别并抑制肌电成分... | [A Novel EEMD-CCA Approach to Removing Muscle Artifacts for Pervasive EEG](https://ieeexplore.ieee.org/document/8476603) | IEEE Sensors Journal | - | Hefei University of Technology + University of British Columbia | 面向身体传感网络和可穿戴/长期EEG监测；在仿真、半仿真和真实数据上验证，并报告少通道设置也具备竞争力 |
 
 ---
 
