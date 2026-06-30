@@ -28,7 +28,7 @@ title: EEG Denoising Review
 
 ### 1.1 时间线总览
 
-> 共收录 **69** 条记录（截至2026年）
+> 共收录 **70** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -38,7 +38,7 @@ title: EEG Denoising Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 10 |
+| 2026 | 11 |
 
 ### 1.2 方法详情
 
@@ -113,6 +113,7 @@ title: EEG Denoising Review
 | 67 | FARU-Net | 2026 | 频率感知残差U-Net，在潜在空间通过频率感知瓶颈模块（FBM）进行频谱重校准，并在跳跃连接中加入注意力门控，同时以时域和频域损失约束波形与频谱一致性... | [Dual-Domain Symmetry: A Frequency-Aware Residual U-Net for High-Fidelity EEG Artifact Removal](https://www.mdpi.com/2073-8994/18/6/988) | Symmetry | - | Chengdu University of Technology | 在EEGdenoiseNet上处理单通道EOG/EMG混合伪迹，并在PhysioNet运动想象数据上评估跨数据集频谱保持与下游分类 |
 | 68 | Ultra-Compact DSConv U-Net | 2026 | 固定网络结构、损失、数据划分和训练流程，仅扫描深度可分离卷积U-Net的通道宽度，以隔离模型容量影响；发现重构性能在约3K–6.5K参数后趋于饱和，并检验重构指标与下游BCI效用之间的偏差... | [How Much Capacity Does EEG Denoising Need? Ultra-Compact Networks reveal Benchmark Saturation and Metric-Utility Gap](https://arxiv.org/abs/2606.08594) | Arxiv | - | Indian Institute of Technology Mandi | 容量控制与评测研究，并非单纯追求SOTA；CSP+LDA下去噪反而降低运动想象分类性能，代码声明将在正式发表后公开 |
 | 69 | ET-informed DL | 2026 | 利用同步眼动追踪（ET）信息训练记录内深度学习模型，预测EEG中可由眼动解释的成分；同时结合真实头模型模拟眼动伪迹，以区分眼动相关神经活动、非神经伪迹和其他脑活动... | [Isolating Eye-Movement Artifacts from EEG Signals](https://www.worldscientific.com/doi/abs/10.1142/S0129065726500437) | International Journal of Neural Systems | - | University of South Carolina + University of Southern California | 提供眼动信息辅助的去混杂与评测框架，可用于评估ICA等伪迹隔离方法的敏感度和特异度 |
+| 70 | Multi-head Noise Regression | 2026 | 两头单通道噪声回归器，从2 s EEG片段同时估计EOG与EMG噪声信号比（NSR, dB）；最佳模型为膨胀TCN，用连续伪迹强度作为控制信号，触发选择性小波去眨眼伪迹而非对所有片段统一去噪... | [Multi-head noise regression for single-channel EEG: estimating ocular and muscle contamination to guide artifact removal](https://iopscience.iop.org/article/10.1088/1741-2552/ae541d) | Journal of Neural Engineering | [是](https://github.com/usmanqamarshaikh/EEG-Multi-Head-Noise-Regression) | Auckland University of Technology + New Zealand College of Chiropractic + Aalborg University | 在EEGdenoiseNet合成EOG/EMG污染上训练，并在独立眨眼数据、P3 ERP数据和55名受试者RSVP P300 speller数据上验证；选择性去噪可减少过度清洗并改善AUC |
 
 ---
 
@@ -152,7 +153,7 @@ title: EEG Denoising Review
 
 ## 4. EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **6** 条记录
+> 共收录 **7** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -162,6 +163,7 @@ title: EEG Denoising Review
 | 4 | TOED-GAN | 2024 | 任务导向，面向BCI实际场景，有自采数据集，模拟移动场景、故意加了更多噪声，基于GAN，生成器U-Net | Task-oriented EEG denoising generative adversarial network for enhancing SSVEP-BCI performance | JNE | 否 | National University of Defense Technology | 通讯作者胡德文院士 |
 | 5 | FDC-Net | 2025 | EEG去噪任务和多维情绪解码 | FDC-Net: Rethinking the association between EEG artifact removal and multi-dimensional affective computing | Arxiv | 是 | Beijing University of Technology | - |
 | 6 | TOL | 2026 | 通过盲源分离分解EEG成分，学习型选择器预测保留概率并加权重建；借助下游任务损失协同优化，仅需任务标签、无需干净参考。 | Task-Oriented Learning for Automatic EEG Denoising | IEEE TIM | 否 | 中国科学院自动化研究所 | - |
+| 7 | Multi-head Noise Regression | 2026 | 先估计单通道EOG/EMG污染强度，再只对高污染片段触发小波眨眼去噪；用于验证“选择性去噪”是否比统一去噪更能保护ERP和BCI解码性能 | [Multi-head noise regression for single-channel EEG: estimating ocular and muscle contamination to guide artifact removal](https://iopscience.iop.org/article/10.1088/1741-2552/ae541d) | JNE | [是](https://github.com/usmanqamarshaikh/EEG-Multi-Head-Noise-Regression) | Auckland University of Technology + New Zealand College of Chiropractic + Aalborg University | 在P3 ERP和RSVP P300 speller任务中，统一去噪会削弱显著ERP通道或降低解码，TCN门控的选择性去噪在较少处理片段的同时改善AUC |
 
 ---
 
