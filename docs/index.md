@@ -155,7 +155,7 @@ title: EEG Denoising Review
 
 ## 4. EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **7** 条记录
+> 共收录 **9** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -166,6 +166,8 @@ title: EEG Denoising Review
 | 5 | FDC-Net | 2025 | EEG去噪任务和多维情绪解码 | FDC-Net: Rethinking the association between EEG artifact removal and multi-dimensional affective computing | Arxiv | 是 | Beijing University of Technology | - |
 | 6 | TOL | 2026 | 通过盲源分离分解EEG成分，学习型选择器预测保留概率并加权重建；借助下游任务损失协同优化，仅需任务标签、无需干净参考。 | Task-Oriented Learning for Automatic EEG Denoising | IEEE TIM | 否 | 中国科学院自动化研究所 | - |
 | 7 | Multi-head Noise Regression | 2026 | 先估计单通道EOG/EMG污染强度，再只对高污染片段触发小波眨眼去噪；用于验证“选择性去噪”是否比统一去噪更能保护ERP和BCI解码性能 | [Multi-head noise regression for single-channel EEG: estimating ocular and muscle contamination to guide artifact removal](https://iopscience.iop.org/article/10.1088/1741-2552/ae541d) | JNE | [是](https://github.com/usmanqamarshaikh/EEG-Multi-Head-Noise-Regression) | Auckland University of Technology + New Zealand College of Chiropractic + Aalborg University | 在P3 ERP和RSVP P300 speller任务中，统一去噪会削弱显著ERP通道或降低解码，TCN门控的选择性去噪在较少处理片段的同时改善AUC |
+| 8 | FAAR | 2026 | 提出Fast Automatic Artifact Rejection，基于频带谱幅值、RMS、最大梯度、过零率和峰度构建epoch级信号质量指数，并从记录内自校准阈值；在13个MOABB公开MI数据集上比较无拒绝、AutoReject、Isolation Forest和FAAR对下游MI解码的影响 | [From EEG Cleaning to Decoding: The Role of Artifact Rejection in MI-based BCIs](https://arxiv.org/abs/2605.12408) | Arxiv | - | Yneuro + SCCN/UC San Diego | 清洗不是总有益：低baseline/低SNR被试更可能受益，BA<0.6时FAAR/AutoReject约57%被试提升；FAAR拒绝epoch比例≤2.3%，并降低跨被试性能方差，适合作为任务导向artifact rejection基线 |
+| 9 | Preprocessing Sensitivity / NA-PGI | 2026 | 将EEG预处理选择形式化为反事实干预空间，系统评估同一原始试次在128种预处理管线下的预测翻转；提出Preprocessing Uncertainty度量逐试次预处理不确定性，并用Normalized Adaptive PGI降低预测对预处理变化的敏感性 | [Same Brain, Different Prediction: How Preprocessing Choices Undermine EEG Decoding Reliability](https://arxiv.org/abs/2605.07212) | Arxiv | [是](https://github.com/dengzhe-hou/EEG-Preprocessing-Sensitivity) | Tohoku University + University of Georgia + Texas A&M University + Worcester Polytechnic Institute | 覆盖MI、睡眠、P300、情绪六个公开数据集；BCI-IV-2a中仅改变预处理即可使42.4%试次预测翻转，强调EEG去噪/预处理benchmark应报告下游准确率之外的预测稳定性和预处理不确定性 |
 
 ---
 
