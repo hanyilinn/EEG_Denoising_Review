@@ -155,7 +155,7 @@ title: EEG Denoising Review
 
 ## 4. EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **9** 条记录
+> 共收录 **11** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -168,6 +168,8 @@ title: EEG Denoising Review
 | 7 | Multi-head Noise Regression | 2026 | 先估计单通道EOG/EMG污染强度，再只对高污染片段触发小波眨眼去噪；用于验证“选择性去噪”是否比统一去噪更能保护ERP和BCI解码性能 | [Multi-head noise regression for single-channel EEG: estimating ocular and muscle contamination to guide artifact removal](https://iopscience.iop.org/article/10.1088/1741-2552/ae541d) | JNE | [是](https://github.com/usmanqamarshaikh/EEG-Multi-Head-Noise-Regression) | Auckland University of Technology + New Zealand College of Chiropractic + Aalborg University | 在P3 ERP和RSVP P300 speller任务中，统一去噪会削弱显著ERP通道或降低解码，TCN门控的选择性去噪在较少处理片段的同时改善AUC |
 | 8 | FAAR | 2026 | 提出Fast Automatic Artifact Rejection，基于频带谱幅值、RMS、最大梯度、过零率和峰度构建epoch级信号质量指数，并从记录内自校准阈值；在13个MOABB公开MI数据集上比较无拒绝、AutoReject、Isolation Forest和FAAR对下游MI解码的影响 | [From EEG Cleaning to Decoding: The Role of Artifact Rejection in MI-based BCIs](https://arxiv.org/abs/2605.12408) | Arxiv | - | Yneuro + SCCN/UC San Diego | 清洗不是总有益：低baseline/低SNR被试更可能受益，BA<0.6时FAAR/AutoReject约57%被试提升；FAAR拒绝epoch比例≤2.3%，并降低跨被试性能方差，适合作为任务导向artifact rejection基线 |
 | 9 | Preprocessing Sensitivity / NA-PGI | 2026 | 将EEG预处理选择形式化为反事实干预空间，系统评估同一原始试次在128种预处理管线下的预测翻转；提出Preprocessing Uncertainty度量逐试次预处理不确定性，并用Normalized Adaptive PGI降低预测对预处理变化的敏感性 | [Same Brain, Different Prediction: How Preprocessing Choices Undermine EEG Decoding Reliability](https://arxiv.org/abs/2605.07212) | Arxiv | [是](https://github.com/dengzhe-hou/EEG-Preprocessing-Sensitivity) | Tohoku University + University of Georgia + Texas A&M University + Worcester Polytechnic Institute | 覆盖MI、睡眠、P300、情绪六个公开数据集；BCI-IV-2a中仅改变预处理即可使42.4%试次预测翻转，强调EEG去噪/预处理benchmark应报告下游准确率之外的预测稳定性和预处理不确定性 |
+| 10 | EEG-AI | 2026 | 构建human-in-the-loop的EEG预处理智能体系统，由LLM驱动决策agent调用EEG分析工具，结合标准预处理、多个ICA/伪迹分类器概率输出和迭代推理循环，决定ICA成分保留/剔除及是否重跑分析；每轮通过closed-loop policy复评以提高可复现性、可审计性和专家监督效率 | [EEG-AI: An agentic system for AI-assisted semi-automated EEG preprocessing and artifact removal](https://www.sciencedirect.com/science/article/pii/S0165027026000890) | Journal of Neuroscience Methods | - | Unity Health Toronto + University of Toronto + Western University + Toronto Metropolitan University | EEG agent方向的代表性系统论文；在合成EEG和专家标注真实数据上评估artifact detection、ICA分类和重建质量，相对专家标注基线报告Pearson r=0.666±0.188、RMSE=5×10^-6±1×10^-6 |
+| 11 | AutocleanEEG-ICVision | 2026 | 在EEG Autoclean平台中加入基于视觉语言模型的ICA伪迹分类agent，将ICA dashboard的地形图、频谱、时间序列等可视化作为输入，自动输出脑源/眼动/肌肉/心电/通道噪声等类别、置信度和可解释理由，用于半自动artifact rejection和人工复核 | [AutocleanEEG - ICVision: Automated ICA Artifact Classification Using Vision-Language AI](https://ieeexplore.ieee.org/document/11539774) | ICMI 2026 | 是 | Cincinnati Children’s Hospital / University of Cincinnati | 面向AI-assisted EEG preprocessing与XAI；关键词包括AI-agent、Vision-language AI、ICA component、artifact rejection和BCI；适合作为智能体/多模态AI辅助EEG去噪工具方向补充 |
 
 ---
 
