@@ -2,6 +2,8 @@
 
 整理EEG去噪领域的传统方法、深度学习方法以及可投稿期刊调研结果。
 
+网页浏览版：[https://hanyilinn.github.io/EEG_Denoising_Review/](https://hanyilinn.github.io/EEG_Denoising_Review/)
+
 ## 项目结构
 
 ```
