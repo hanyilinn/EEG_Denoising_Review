@@ -1,33 +1,41 @@
 ---
 layout: default
-title: EEG Denoising Review
+title: EEG Research Review
 ---
 
-## EEG Denoising Methods & Journals Survey
+## EEG Research Papers, Publication Venues & Datasets Survey
 
-👁️ EEG去噪方法与期刊调研
+👁️ EEG研究论文、投稿期刊与数据集调研
 
-整理EEG去噪领域的方法、综述、期刊和数据集调研结果，便于快速了解该领域进展。
+整理EEG去噪、EEG基础模型、EEG智能体、下游任务、可投稿期刊和常用数据集，便于快速了解该领域进展。
 
 ---
 
 ## 目录
 
-1. [深度学习EEG去噪方法](#1-深度学习eeg去噪方法-deep-learning-eeg-denoising)
-2. [传统EEG去噪方法](#2-传统eeg去噪方法-traditional-eeg-denoising)
-3. [EEG去噪相关综述](#3-eeg去噪相关综述-eeg-denoising-reviews)
-4. [EEG去噪结合下游任务的研究](#4-eeg去噪结合下游任务的研究-eeg-denoising-with-downstream-tasks)
-5. [EEG Agent相关研究](#5-eeg-agent相关研究-eeg-agent-related-studies)
-6. [EEG去噪可投稿期刊（已有EEG去噪论文发表）](#6-eeg去噪可投稿期刊-期刊已有eeg去噪论文发表)
-7. [EEG领域下其他可供选择的期刊](#7-eeg领域下其他可供选择的期刊-other-journals-in-eeg-field)
-8. [EEG去噪研究适合使用的数据集](#8-eeg去噪研究适合使用的数据集-eeg-denoising-datasets)
+1. [研究论文整理](#一研究论文整理-research-papers)
+   - [深度学习EEG去噪方法](#11-深度学习eeg去噪方法-deep-learning-eeg-denoising)
+   - [传统EEG去噪方法](#12-传统eeg去噪方法-traditional-eeg-denoising)
+   - [EEG去噪相关综述](#13-eeg去噪相关综述-eeg-denoising-reviews)
+   - [EEG去噪结合下游任务的研究](#14-eeg去噪结合下游任务的研究-eeg-denoising-with-downstream-tasks)
+   - [EEG基础模型相关研究](#15-eeg基础模型相关研究-eeg-foundation-model-studies)
+   - [EEG Agent相关研究](#16-eeg-agent相关研究-eeg-agent-related-studies)
+2. [可投稿期刊整理](#二可投稿期刊整理-publication-venues)
+   - [EEG去噪可投稿期刊（已有EEG去噪论文发表）](#21-eeg去噪可投稿期刊-期刊已有eeg去噪论文发表)
+   - [EEG领域下其他可供选择的期刊](#22-eeg领域下其他可供选择的期刊-other-journals-in-eeg-field)
+3. [数据集整理](#三数据集整理-datasets)
+   - [EEG去噪研究适合使用的数据集](#31-eeg去噪研究适合使用的数据集-eeg-denoising-datasets)
 
 ---
 
-## 1. 深度学习EEG去噪方法 (Deep Learning EEG Denoising)
+## 一、研究论文整理 (Research Papers)
+
+该部分按研究主题组织已读论文与待持续跟踪方向。当前重点包括EEG去噪方法、综述、任务导向去噪、EEG基础模型和EEG智能体。
+
+### 1.1 深度学习EEG去噪方法 (Deep Learning EEG Denoising)
 
 
-### 1.1 时间线总览
+#### 1.1.1 时间线总览
 
 > 共收录 **71** 条记录（截至2026年）
 
@@ -41,7 +49,7 @@ title: EEG Denoising Review
 | 2025 | 26 |
 | 2026 | 12 |
 
-### 1.2 方法详情
+#### 1.1.2 方法详情
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -119,7 +127,7 @@ title: EEG Denoising Review
 
 ---
 
-## 2. 传统EEG去噪方法 (Traditional EEG Denoising)
+### 1.2 传统EEG去噪方法 (Traditional EEG Denoising)
 
 > 主要整理传统/信号处理类方法，共收录 **11** 条记录
 
@@ -139,7 +147,7 @@ title: EEG Denoising Review
 
 ---
 
-## 3. EEG去噪相关综述 (EEG Denoising Reviews)
+### 1.3 EEG去噪相关综述 (EEG Denoising Reviews)
 
 > 共收录 **8** 条综述
 
@@ -156,7 +164,7 @@ title: EEG Denoising Review
 
 ---
 
-## 4. EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
+### 1.4 EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
 > 共收录 **9** 条记录
 
@@ -174,7 +182,13 @@ title: EEG Denoising Review
 
 ---
 
-## 5. EEG Agent相关研究 (EEG Agent Related Studies)
+### 1.5 EEG基础模型相关研究 (EEG Foundation Model Studies)
+
+> 待补充：后续将单独整理LaBraM、EEGMamba、CBraMod、BENDR、BrainLM、ZUNA等EEG/脑信号基础模型，以及它们在去噪、重建、超分辨率和下游解码任务中的表现。
+
+---
+
+### 1.6 EEG Agent相关研究 (EEG Agent Related Studies)
 
 > 共收录 **4** 条记录
 
@@ -187,11 +201,15 @@ title: EEG Denoising Review
 
 ---
 
-## 6. EEG去噪可投稿期刊（已有EEG去噪论文发表）
+## 二、可投稿期刊整理 (Publication Venues)
+
+该部分整理EEG去噪及相关EEG研究可考虑的投稿期刊，区分已有EEG去噪论文发表的期刊与更广泛的EEG领域候选期刊。
+
+### 2.1 EEG去噪可投稿期刊（已有EEG去噪论文发表）
 
 > 共收录 **29** 条期刊（按学科分类）
 
-### 6.1 医学
+#### 2.1.1 医学
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -209,7 +227,7 @@ title: EEG Denoising Review
 | 12 | [Neuroscience](https://www.sciencedirect.com/journal/neuroscience) | Neuroscience | 四区 | 四区 | 2.8 | 478 | Elsevier | - |
 | 13 | [Biomedical Physics & Engineering Express](https://iopscience.iop.org/journal/2057-1976) | BPEE | 四区 | - | 1.6 | 279 | IOP Publishing | - |
 
-### 6.2 计算机科学
+#### 2.1.2 计算机科学
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -224,7 +242,7 @@ title: EEG Denoising Review
 | 9 | [Electronics](https://www.mdpi.com/journal/electronics) | - | 四区 | - | 2.6 | 5022 | MDPI | - |
 | 10 | [Signal Image and Video Processing](https://www.springer.com/journal/11760) | SIVP | 四区 | - | 2.1 | 634 | Springer | - |
 
-### 6.3 工程技术
+#### 2.1.3 工程技术
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -233,7 +251,7 @@ title: EEG Denoising Review
 | 3 | [Cogent Engineering](https://www.tandfonline.com/journals/oaen20) | \ | 四区 | 三区 | 2.5 | 356 | Taylor & Francis | - |
 | 4 | [Technologies](https://www.mdpi.com/journal/technologies) | \ | 三区 | 三区 | 3.6 | 262 | MDPI | - |
 
-### 6.4 综合性期刊
+#### 2.1.4 综合性期刊
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -243,11 +261,11 @@ title: EEG Denoising Review
 
 ---
 
-## 7. EEG领域下其他可供选择的期刊 (Other Journals in EEG Field)
+### 2.2 EEG领域下其他可供选择的期刊 (Other Journals in EEG Field)
 
 > 共收录 **35** 条期刊（按学科分类）
 
-### 7.1 计算机科学
+#### 2.2.1 计算机科学
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -268,7 +286,7 @@ title: EEG Denoising Review
 | 15 | [IEEE Signal Processing Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=97) | IEEE SPL | 三区 | 三区 | 3.9 | 635 | IEEE | - |
 | 16 | [Applied Intelligence](https://www.springer.com/journal/10489) | AppI | 三区 | - | 3.5 | 635 | Springer | - |
 
-### 7.2 医学
+#### 2.2.2 医学
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -283,14 +301,14 @@ title: EEG Denoising Review
 | 9 | [Frontiers in Neuroscience](https://www.frontiersin.org/journals/neuroscience) | Fron. Neur. | 三区 | - | 3.2 | 1118 | Frontiers | - |
 | 10 | [Cognitive Neurodynamics](https://www.springer.com/journal/11571) | CN | 四区 | 二区 | 3.9 | 126 | Springer | - |
 
-### 7.3 工程技术
+#### 2.2.3 工程技术
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
 | 1 | [IEEE Transactions on Signal Processing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78) | IEEE TSP | 二区TOP | 二区TOP | 5.8 | 375 | IEEE | - |
 | 2 | [Computers & Industrial Engineering](https://www.sciencedirect.com/journal/computers-and-industrial-engineering) | CIE | 二区TOP | 一区TOP | 6.5 | 812 | Elsevier | - |
 
-### 7.4 综合性期刊
+#### 2.2.4 综合性期刊
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -300,7 +318,7 @@ title: EEG Denoising Review
 | 4 | [Scientific Reports](https://www.nature.com/srep/) | Sci. Rep. | 三区 | - | 3.9 | 31052 | Springer Nature | Open Access |
 | 5 | [PLoS One](https://journals.plos.org/plosone/) | PLoS One | 三区 | - | 2.6 | 16608 | Public Library of Science | Open Access |
 
-### 7.5 生物学
+#### 2.2.5 生物学
 
 | 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
@@ -309,11 +327,15 @@ title: EEG Denoising Review
 
 ---
 
-## 8. EEG去噪研究适合使用的数据集 (EEG Denoising Datasets)
+## 三、数据集整理 (Datasets)
+
+该部分整理EEG去噪及相关任务中常用的数据集，后续可继续扩展到EEG基础模型预训练数据集、下游解码benchmark数据集和智能体评测数据集。
+
+### 3.1 EEG去噪研究适合使用的数据集 (EEG Denoising Datasets)
 
 > 共收录 **3** 条数据集
 
-### 8.1 EEGdenoiseNet
+#### 3.1.1 EEGdenoiseNet
 
 | 属性 | 内容 |
 |:---:|:---|
@@ -324,7 +346,7 @@ title: EEG Denoising Review
 | 数据量 | 干净EEG片段：4514个；EMG片段：5598个；EOG片段：3400个 |
 | 预处理情况 | 每个片段长度为512个采样点，对应2秒（采样率256 Hz） |
 
-### 8.2 MIT-BIH心律失常数据集
+#### 3.1.2 MIT-BIH心律失常数据集
 
 | 属性 | 内容 |
 |:---:|:---|
@@ -335,7 +357,7 @@ title: EEG Denoising Review
 | 数据量 | 3600个ECG片段 |
 | 预处理情况 | ECG信号经45 Hz低通滤波，重采样至256 Hz，并切割为2秒片段 |
 
-### 8.3 运动伪迹数据集（Kevin T. Sweeney 提供）
+#### 3.1.3 运动伪迹数据集（Kevin T. Sweeney 提供）
 
 | 属性 | 内容 |
 |:---:|:---|
@@ -347,11 +369,3 @@ title: EEG Denoising Review
 | 预处理情况 | 重采样至256 Hz，切割为2秒片段 |
 
 ---
-
-## 贡献
-
-欢迎提交Issue或Pull Request来补充完善数据。
-
-## 许可
-
-MIT License
