@@ -186,7 +186,36 @@ title: EEG Research Review
 
 ### 1.5 EEG基础模型相关研究 (EEG Foundation Model Studies)
 
-> 待补充：后续将单独整理LaBraM、EEGMamba、CBraMod、BENDR、BrainLM、ZUNA等EEG/脑信号基础模型，以及它们在去噪、重建、超分辨率和下游解码任务中的表现。
+#### 1.5.1 核心基础模型论文
+
+> 共收录 **12** 条记录
+
+| 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
+|:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
+| 1 | BENDR | 2021 | 将Transformer和对比式自监督学习引入大规模EEG预训练，先在TUEG等大规模EEG上学习通用表征，再迁移到BCI小样本分类任务... | [BENDR: using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data](https://arxiv.org/abs/2101.12037) | Frontiers in Human Neuroscience / Arxiv | [是](https://github.com/SPOClab-ca/BENDR) | University of Toronto | 早期EEG foundation/self-supervised代表，常被后续EEG基础模型作为基线 |
+| 2 | BIOT | 2023 | Biosignal Transformer，将不同长度、通道数和采样格式的生理信号tokenize为统一“句子”，支持跨EEG/ECG/传感器数据的联合预训练与迁移... | [BIOT: Cross-data Biosignal Learning in the Wild](https://arxiv.org/abs/2305.10351) | NeurIPS 2023 | [是](https://github.com/ycq091044/BIOT) | University of Illinois Urbana-Champaign + Harvard Medical School | 不是纯EEG模型，但在EEG foundation model benchmark中常作为跨生理信号基础模型基线 |
+| 3 | Neuro-GPT | 2023 | 由EEG encoder和GPT模块组成，用masked EEG segment reconstruction进行自监督预训练，再在低数据量运动想象任务上微调验证泛化能力... | [Neuro-GPT: Towards A Foundation Model for EEG](https://arxiv.org/abs/2311.03764) | ISBI 2024 | [是](https://github.com/wenhui0206/NeuroGPT) | University of Southern California + Université de Montréal | 明确提出EEG foundation model框架，适合作为LaBraM前后的谱系节点 |
+| 4 | BrainWave | 2024 | 面向临床应用的脑信号基础模型，覆盖侵入式与非侵入式神经记录，通过大规模预训练学习可迁移的疾病/异常相关神经表征... | [BrainWave: A Brain Signal Foundation Model for Clinical Applications](https://arxiv.org/abs/2402.10251) | Arxiv | - | - | 范围比EEG更广，适合作为临床脑信号foundation model代表 |
+| 5 | LaBraM | 2024 | Large Brain Model，利用大规模EEG数据和神经tokenizer学习跨数据集、跨任务的通用脑电表征，面向BCI和临床任务迁移... | [Large Brain Model for Learning Generic Representations with Tremendous EEG Data in BCI](https://arxiv.org/abs/2405.18765) | ICLR 2024 Spotlight | [是](https://github.com/935963004/LaBraM) | Shanghai Jiao Tong University | 当前最有代表性的EEG大模型之一，后续大量研究以其为基线或适配对象 |
+| 6 | EEGPT / BrainGPT | 2024 | 采用自回归预训练释放EEG generalist foundation model能力，强调统一处理多样EEG格式并提升跨任务迁移表现... | [BrainGPT: Unleashing the Potential of EEG Generalist Foundation Model by Autoregressive Pre-training](https://arxiv.org/abs/2410.19779) | NeurIPS 2024 | [是](https://github.com/BINE022/EEGPT) | - | 代码仓库题名为EEGPT，论文题名为BrainGPT；适合作为通用EEG自回归预训练路线 |
+| 7 | CBraMod | 2024 | Criss-Cross Brain Foundation Model，通过频段内/频段间的criss-cross建模机制学习EEG时空依赖，用于跨任务EEG decoding... | [CBraMod: A Criss-Cross Brain Foundation Model for EEG Decoding](https://arxiv.org/abs/2412.07236) | ICLR 2025 | [是](https://github.com/wjq-learning/CBraMod) | Zhejiang University | 与LaBraM、EEGMamba并列的主流EEG foundation model基线 |
+| 8 | EEGMamba | 2024 | 首个面向通用EEG多任务分类的Mamba/状态空间模型路线，结合双向SSM和Mixture-of-Experts以适配不同任务、长度和通道设置... | [EEGMamba: Bidirectional State Space Model with Mixture of Experts for EEG Multi-task Classification](https://arxiv.org/abs/2407.20254) | Neural Networks 2025 | [是](https://github.com/wjq-learning/EEGMamba) | Zhejiang University | 代表EEG基础模型中的线性复杂度SSM路线，常与LaBraM/CBraMod共同比较 |
+| 9 | NeuroLM | 2024 | 将EEG视作“外语”，通过text-aligned neural tokenizer把EEG编码为离散neural tokens，并借助LLM能力实现多任务学习与推理... | [NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap between Language and EEG Signals](https://arxiv.org/abs/2409.00101) | Arxiv | - | Shanghai Jiao Tong University | EEG+语言模型/tokenizer路线，和后续EEG智能体、脑电到文本方向关系紧密 |
+| 10 | CEReBrO | 2025 | Compact Encoder for Representations of Brain Oscillations，使用per-channel patch tokenization和alternating attention同时建模通道内时间动态与跨通道空间关系... | [CEReBrO: Compact Encoder for Representations of Brain Oscillations Using Efficient Alternating Attention](https://arxiv.org/abs/2501.10885) | Arxiv | [是](https://github.com/pulp-bio/BioFoundation) | ETH Zurich + University of Bologna | 小型、可复现、偏高效EEG基础模型；后续S-CEReBrO扩展到连续EEG监测 |
+| 11 | ZUNA / ZUNA1.1 | 2026 | 380M参数扩散自编码EEG/BCI基础模型，面向任意通道布局的EEG重建、缺失通道补全、去噪和超分辨率；ZUNA1.1进一步支持更灵活的变长序列与局部片段重建... | [ZUNA](https://arxiv.org/abs/2602.18478) / [ZUNA1.1](https://arxiv.org/abs/2607.27308) | Arxiv | [是](https://huggingface.co/Zyphra/ZUNA1.1) | Zyphra | 与EEG去噪网页高度相关，已在深度学习去噪表中单独列为ZUNA1.1 |
+| 12 | MSBraM | 2026 | Multi-Scale self-supervised Brain foundation Model，先用多尺度neural tokenizer将原始EEG离散为不同时间分辨率semantic codes，再用curriculum multi-scale masking学习层级动态... | [MSBraM: A Multi-scale Self-supervised Brain Foundation Model for Hierarchical EEG Dynamics Learning](https://arxiv.org/abs/2607.21402) | Arxiv | - | - | 强调EEG内在多尺度时间结构，适合作为后LaBraM时代的多尺度自监督路线 |
+
+#### 1.5.2 基础模型评测与适配研究
+
+> 共收录 **5** 条记录
+
+| 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
+|:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
+| 1 | Stress Test | 2026 | 对LaBraM、EEGMamba、CBraMod、REVE、BENDR和BIOT在5个临床任务/4个数据集上做冻结线性探针评测，并加入随机初始化、标签置乱、投影敏感性等负对照... | [Stress-Testing EEG Foundation Models for Clinical Decoding: Dataset Identity and Targeted Negative Controls](https://arxiv.org/abs/2607.24519) | Arxiv | - | - | 指出dataset identity可从冻结embedding中被高精度解码，提醒EEG基础模型benchmark必须做泄漏与负对照检查 |
+| 2 | Speech Transfer Benchmark | 2026 | 系统评测LaBraM和EEGMamba能否迁移到overt/covert/imagined speech decoding，并与EEGNet、ShallowFBCSPNet、EEGConformer等强基线比较... | [Does EEG Foundation Models Transfer to Speech? A Benchmark on Overt and Imagined Speech Decoding](https://arxiv.org/abs/2607.27268) | Arxiv | - | - | 结论提示当前通用EEG预训练在语音解码上不一定优于小CNN，对“通用脑电解码模型”边界很有参考价值 |
+| 3 | Generalization Framework | 2026 | 提出多维度评估框架，在低标签、少通道、参数高效适配等现实约束下评估LaBraM、CSBrain、CBraMod等EEG基础模型的泛化能力... | [A Multi-dimensional Framework for Evaluating Generalization in EEG Foundation Models](https://arxiv.org/abs/2605.28563) | Arxiv | - | University of Southern California | 非常适合作为后续task-oriented benchmark设计参考 |
+| 4 | Identity Trap / FMScope | 2026 | 提出FMScope冻结表征诊断协议，从方差分解、subject-axis erasure、aperiodic 1/f消融、层级label probing等角度检查EEG基础模型是否学到受试者身份捷径... | [The Identity Trap in EEG Foundation Models: A Diagnostic Audit](https://arxiv.org/abs/2606.06647) | Arxiv | - | UC San Diego | 对跨被试、临床分类和预处理benchmark尤其重要，避免把身份信息误认为疾病/任务信息 |
+| 5 | Representation Audit | 2026 | 用layer-wise probing、LEACE式子空间擦除和透明分类器分析CSBrain、CBraMod、LaBraM学到了什么、用了什么，以及可被传统EEG特征解释多少... | [What Do EEG Foundation Models Capture from Human Brain Signals?](https://arxiv.org/abs/2605.11410) | Arxiv | - | - | 解释性和可信性导向，适合与基础模型性能表配套阅读 |
 
 ---
 
