@@ -20,6 +20,7 @@ title: EEG Research Review
    - [EEG去噪结合下游任务的研究](#14-eeg去噪结合下游任务的研究-eeg-denoising-with-downstream-tasks)
    - [EEG基础模型相关研究](#15-eeg基础模型相关研究-eeg-foundation-model-studies)
    - [EEG Agent相关研究](#16-eeg-agent相关研究-eeg-agent-related-studies)
+   - [EEG Benchmark相关研究](#17-eeg-benchmark相关研究-eeg-benchmark-related-studies)
 2. [可投稿期刊整理](#二可投稿期刊整理-publication-venues)
    - [EEG去噪可投稿期刊（已有EEG去噪论文发表）](#21-eeg去噪可投稿期刊-期刊已有eeg去噪论文发表)
    - [EEG领域下其他可供选择的期刊](#22-eeg领域下其他可供选择的期刊-other-journals-in-eeg-field)
@@ -30,7 +31,7 @@ title: EEG Research Review
 
 ## 一、研究论文整理 (Research Papers)
 
-该部分按研究主题组织已读论文与待持续跟踪方向。当前重点包括EEG去噪方法、综述、任务导向去噪、EEG基础模型和EEG智能体。
+该部分按研究主题组织已读论文与待持续跟踪方向。当前重点包括EEG去噪方法、综述、任务导向去噪、EEG基础模型、EEG智能体和EEG benchmark。
 
 ### 1.1 深度学习EEG去噪方法 (Deep Learning EEG Denoising)
 
@@ -230,6 +231,19 @@ title: EEG Research Review
 | 2 | BrainAgent | 2026 | LLM驱动的多智能体脑信号理解框架，由中心supervisor协调多个专门子智能体，将自然语言意图转化为可执行的端到端脑信号处理流程... | [BrainAgent: A Large Language Model-Driven Multi-Agent Framework for Autonomous Brain Signal Understanding](https://arxiv.org/abs/2606.25400) | Arxiv | - | Zhejiang University | 进一步强调层级式多智能体、长流程自动化和脑信号分析benchmark，覆盖范围比单纯EEG更广 |
 | 3 | EasyBCI Agent | 2026 | 面向BCI/神经数据预处理的两阶段LLM智能体；Plan Agent生成不暴露原始数据的Data Fingerprint并选择文献依据的算子序列，Execution Agent生成、运行并自纠错代码，结合质量门控经验库复用策略... | [EasyBCI Agent: Towards Universal Neural Data Preprocessing for Brain-Computer Interfaces](https://arxiv.org/abs/2607.29007) | Arxiv | - | - | 与EEG去噪/预处理最相关；在EEG固定线性分类器评估中，报告比人工pipeline更能保留下游任务相关可分性 |
 | 4 | CogEEGAgent | 2026 | 面向认知EEG分析的可审计智能体，基于MNE-Python，将LLM意图理解与确定性科学执行分离，并通过typed contracts、confirmation access控制和selection-aware verification降低自适应搜索带来的假阳性风险... | [CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification](https://arxiv.org/abs/2607.25045) | Arxiv | [是](https://github.com/dengzhe-hou/CogEEGAgent) | Tohoku University | 更偏认知EEG统计分析自动化；对未来构建可审计EEG benchmark agent有参考价值 |
+
+---
+
+### 1.7 EEG Benchmark相关研究 (EEG Benchmark Related Studies)
+
+> 共收录 **4** 条记录
+
+| 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
+|:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
+| 1 | Preprocessing Benchmark | 2020 | 系统比较EEG结果对预处理流程的敏感性，围绕ICA-based preprocessing、ASR等自动化流程，评估不同预处理选择对信号统计、ERP/ERSP和眨眼伪迹残差等结果的影响... | [How Sensitive Are EEG Results to Preprocessing Methods: A Benchmarking Study](https://pubmed.ncbi.nlm.nih.gov/32217478/) | IEEE TNSRE | - | The University of Texas at San Antonio + Army Research Laboratory + SCCN/UC San Diego | 适合作为“预处理选择会改变EEG结论”的早期benchmark参考；使用17个EEG研究比较LARG、MARA和两种ASR变体，强调应详细报告处理细节并用自动化处理管线联盟量化流程选择影响 |
+| 2 | LibEER | 2024 | 面向EEG情绪识别的综合benchmark和算法库，统一数据处理、模型训练和评估流程，覆盖多种公开情绪EEG数据集与传统/深度学习方法，便于公平复现实验比较... | [LibEER: A Comprehensive Benchmark and Algorithm Library for EEG-Based Emotion Recognition](https://arxiv.org/abs/2410.09767) | Arxiv / Benchmark Library | [是](https://github.com/yi-ding-cs/LibEER) | Tsinghua University + Shanghai Jiao Tong University + Monash University | 适合放入通用EEG benchmark模块；重点不在去噪，而在情绪识别任务的标准化评估、算法复现和跨数据集比较 |
+| 3 | BrainBench | 2026 | 构建面向LLM的综合EEG理解benchmark，评估大语言模型对EEG知识、信号分析、任务理解、临床/BCI场景推理等问题的回答能力... | [BrainBench: Benchmarking Large Language Models for Comprehensive EEG Understanding](https://arxiv.org/abs/2608.04156) | Arxiv | - | - | 与EEG Agent和EEG基础模型方向关系紧密；适合作为评估LLM/agent是否具备EEG领域知识和分析能力的benchmark |
+| 4 | GCN Harmonization | 2026 | 针对不同MI-BCI数据集电极布局不一致导致的跨数据集迁移困难，提出基于GCN的信号级空间harmonization框架，将异构EEG映射到统一物理电极montage，并用EEGNet、FBCNet、ADFCNN等下游分类器验证... | [Graph convolutional network-based harmonization of EEG for cross-dataset transfer in motor imagery in BCI](https://iopscience.iop.org/article/10.1088/1741-2552/ae9344) | Journal of Neural Engineering | - | Singapore Institute of Technology | 适合作为跨数据集MI-BCI benchmark/数据标准化方向参考；强调在信号层解决电极布局不兼容，并报告harmonized EEG可改善跨数据集迁移和目标域微调表现 |
 
 ---
 
