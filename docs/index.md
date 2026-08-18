@@ -25,7 +25,9 @@ title: EEG Research Review
    - [EEG去噪可投稿期刊（已有EEG去噪论文发表）](#21-eeg去噪可投稿期刊-期刊已有eeg去噪论文发表)
    - [EEG领域下其他可供选择的期刊](#22-eeg领域下其他可供选择的期刊-other-journals-in-eeg-field)
 3. [数据集整理](#三数据集整理-datasets)
-   - [EEG去噪研究适合使用的数据集](#31-eeg去噪研究适合使用的数据集-eeg-denoising-datasets)
+   - [EEG去噪数据集](#31-eeg去噪数据集-eeg-denoising-datasets)
+   - [运动想象数据集](#32-运动想象数据集-motor-imagery-datasets)
+   - [情绪识别数据集](#33-情绪识别数据集-emotion-recognition-datasets)
 
 ---
 
@@ -38,7 +40,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **71** 条记录（截至2026年）
+> 共收录 **72** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -48,7 +50,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 12 |
+| 2026 | 13 |
 
 #### 1.1.2 方法详情
 
@@ -125,6 +127,7 @@ title: EEG Research Review
 | 69 | ET-informed DL | 2026 | 利用同步眼动追踪（ET）信息训练记录内深度学习模型，预测EEG中可由眼动解释的成分；同时结合真实头模型模拟眼动伪迹，以区分眼动相关神经活动、非神经伪迹和其他脑活动... | [Isolating Eye-Movement Artifacts from EEG Signals](https://www.worldscientific.com/doi/abs/10.1142/S0129065726500437) | International Journal of Neural Systems | - | University of South Carolina + University of Southern California | 提供眼动信息辅助的去混杂与评测框架，可用于评估ICA等伪迹隔离方法的敏感度和特异度 |
 | 70 | Multi-head Noise Regression | 2026 | 两头单通道噪声回归器，从2 s EEG片段同时估计EOG与EMG噪声信号比（NSR, dB）；最佳模型为膨胀TCN，用连续伪迹强度作为控制信号，触发选择性小波去眨眼伪迹而非对所有片段统一去噪... | [Multi-head noise regression for single-channel EEG: estimating ocular and muscle contamination to guide artifact removal](https://iopscience.iop.org/article/10.1088/1741-2552/ae541d) | Journal of Neural Engineering | [是](https://github.com/usmanqamarshaikh/EEG-Multi-Head-Noise-Regression) | Auckland University of Technology + New Zealand College of Chiropractic + Aalborg University | 在EEGdenoiseNet合成EOG/EMG污染上训练，并在独立眨眼数据、P3 ERP数据和55名受试者RSVP P300 speller数据上验证；选择性去噪可减少过度清洗并改善AUC |
 | 71 | ZUNA1.1 | 2026 | 380M参数扩散自编码EEG基础模型，用于灵活的EEG信号重建；支持最长30 s变长序列、任意通道数量与头皮位置、任意时间片段或整通道重建，并面向去噪和超分辨率任务... | [ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution](https://arxiv.org/abs/2607.27308) | Arxiv | [是](https://huggingface.co/Zyphra/ZUNA1.1) | Zyphra | 开源模型声明为Apache-2.0；相较ZUNA1更强调通道/时间布局灵活性，并报告优于MNE中常用的球面样条插值等标准重建方法 |
+| 72 | Gated Artifact Management | 2026 | 面向低密度干电极眼镜式EEG的门控伪迹管理管线；先用轻量级gate classifier识别含伪迹窗口，仅在需要时触发后续处理，再结合时域特征检测、卷积循环网络三分类伪迹识别和U-Net去噪自编码器进行校正... | [A Gated Artifact Management Pipeline for Low-Density Eyewear EEG](https://iopscience.iop.org/article/10.1088/1361-6579/ae99ab) | Physiological Measurement | - | Politecnico di Milano + EssilorLuxottica SA + Università di Pavia | 针对可穿戴眼镜式低密度EEG；29名受试者留一被试评估，gate balanced accuracy 0.89，三类伪迹分类balanced accuracy 0.84、median macro-F1 0.83，端到端median normalized RMSE 0.19、spectral cosine similarity 0.89；强调避免对干净神经活动过度处理并兼容资源受限设备 |
 
 ---
 
@@ -377,7 +380,7 @@ title: EEG Research Review
 
 该部分整理EEG去噪及相关任务中常用的数据集，后续可继续扩展到EEG基础模型预训练数据集、下游解码benchmark数据集和智能体评测数据集。
 
-### 3.1 EEG去噪研究适合使用的数据集 (EEG Denoising Datasets)
+### 3.1 EEG去噪数据集 (EEG Denoising Datasets)
 
 > 共收录 **3** 条数据集
 
@@ -413,5 +416,59 @@ title: EEG Research Review
 | 单通道/多通道 | 单通道 |
 | 数据量 | 2760个运动片段 |
 | 预处理情况 | 重采样至256 Hz，切割为2秒片段 |
+
+### 3.2 运动想象数据集 (Motor Imagery Datasets)
+
+> 共收录 **2** 条数据集
+
+#### 3.2.1 BCI Competition IV 2a
+
+| 属性 | 内容 |
+|:---:|:---|
+| 数据集链接 | [BCI Competition IV - Data set 2a](https://www.bbci.de/competition/iv/#dataset2a) |
+| 任务类型 | 四分类运动想象：左手、右手、双脚、舌头 |
+| 被试与通道 | 9名被试；22个EEG通道，另含3个EOG通道 |
+| 数据组织 | 每名被试包含训练与测试两个session，每个session 288个试次；采样率250 Hz |
+| 适用方向 | 运动想象BCI分类、跨被试泛化、预处理敏感性分析、任务导向EEG去噪/伪迹拒绝benchmark |
+| 备注 | 经典MI-BCI公开数据集，常用于验证去噪或预处理是否真正改善下游解码性能 |
+
+#### 3.2.2 OpenBMI
+
+| 属性 | 内容 |
+|:---:|:---|
+| 文献名称 | [A large electroencephalographic motor imagery dataset for electroencephalographic brain computer interfaces](https://academic.oup.com/gigascience/article/8/5/giz002/5304369) |
+| 数据集链接 | [GigaDB OpenBMI Dataset](http://gigadb.org/dataset/100542) |
+| 任务类型 | 二分类运动想象：左手、右手 |
+| 被试与通道 | 54名健康被试；62通道EEG |
+| 数据组织 | 包含多session运动想象记录，规模大于BCI Competition IV 2a，适合跨被试和跨session评估 |
+| 适用方向 | 大样本MI-BCI解码、跨数据集迁移、domain adaptation、任务导向去噪benchmark |
+| 备注 | 适合与BCIC IV 2a共同构建运动想象benchmark，用于检查去噪模型是否提升真实下游任务表现 |
+
+### 3.3 情绪识别数据集 (Emotion Recognition Datasets)
+
+> 共收录 **2** 条数据集
+
+#### 3.3.1 SEED
+
+| 属性 | 内容 |
+|:---:|:---|
+| 数据集链接 | [SJTU BCMI SEED Dataset](https://bcmi.sjtu.edu.cn/home/seed/) |
+| 任务类型 | EEG情绪识别，通常包含正性、中性、负性三类情绪 |
+| 被试与通道 | 15名被试；62通道EEG |
+| 数据组织 | 每名被试多次实验session，使用电影片段诱发情绪状态 |
+| 适用方向 | 情绪识别、跨session/跨被试迁移、EEG表征学习、任务导向预处理与去噪评估 |
+| 备注 | 国内EEG情绪识别研究中使用频率很高，适合纳入通用EEG解码benchmark |
+
+#### 3.3.2 DEAP
+
+| 属性 | 内容 |
+|:---:|:---|
+| 数据集链接 | [DEAP Dataset](https://www.eecs.qmul.ac.uk/mmv/datasets/deap/) |
+| 文献名称 | [DEAP: A Database for Emotion Analysis using Physiological Signals](https://ieeexplore.ieee.org/document/5871728) |
+| 任务类型 | 基于音乐视频诱发的情绪识别/情感计算；常用维度包括valence、arousal、dominance、liking |
+| 被试与通道 | 32名被试；32通道EEG，同时包含外周生理信号 |
+| 数据组织 | 每名被试观看40段1分钟音乐视频并给出情绪评分 |
+| 适用方向 | 情绪识别、跨被试泛化、多模态生理信号建模、通用EEG解码benchmark |
+| 备注 | 国际情绪EEG研究的经典数据集，可与SEED共同覆盖情绪识别下游任务 |
 
 ---
