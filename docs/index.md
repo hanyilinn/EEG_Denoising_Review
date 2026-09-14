@@ -40,7 +40,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **73** 条记录（截至2026年）
+> 共收录 **74** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -50,7 +50,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 14 |
+| 2026 | 15 |
 
 #### 1.1.2 方法详情
 
@@ -129,6 +129,7 @@ title: EEG Research Review
 | 71 | ZUNA1.1 | 2026 | 380M参数扩散自编码EEG基础模型，用于灵活的EEG信号重建；支持最长30 s变长序列、任意通道数量与头皮位置、任意时间片段或整通道重建，并面向去噪和超分辨率任务... | [ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution](https://arxiv.org/abs/2607.27308) | Arxiv | [是](https://huggingface.co/Zyphra/ZUNA1.1) | Zyphra | 开源模型声明为Apache-2.0；相较ZUNA1更强调通道/时间布局灵活性，并报告优于MNE中常用的球面样条插值等标准重建方法 |
 | 72 | Gated Artifact Management | 2026 | 面向低密度干电极眼镜式EEG的门控伪迹管理管线；先用轻量级gate classifier识别含伪迹窗口，仅在需要时触发后续处理，再结合时域特征检测、卷积循环网络三分类伪迹识别和U-Net去噪自编码器进行校正... | [A Gated Artifact Management Pipeline for Low-Density Eyewear EEG](https://iopscience.iop.org/article/10.1088/1361-6579/ae99ab) | Physiological Measurement | - | Politecnico di Milano + EssilorLuxottica SA + Università di Pavia | 针对可穿戴眼镜式低密度EEG；29名受试者留一被试评估，gate balanced accuracy 0.89，三类伪迹分类balanced accuracy 0.84、median macro-F1 0.83，端到端median normalized RMSE 0.19、spectral cosine similarity 0.89；强调避免对干净神经活动过度处理并兼容资源受限设备 |
 | 73 | MTGNet | 2026 | 任务导向、频谱引导的EEG去噪框架；用并行Mamba-Transformer主干建模时频依赖，Guidance Network估计噪声强度，TACR-LoRA在无干净参考的下游任务上做轻量适配... | [MTGNet: A task-oriented and spectrally guided framework for EEG denoising](https://iopscience.iop.org/article/10.1088/1741-2552/ae9ef1) | Journal of Neural Engineering | - | Tianjin University + Tiangong University | 在EEGDenoiseNet上处理EMG/EOG/混合伪迹，并在MDD半仿真分类和真实疲劳EEG分类中验证下游效用；报告EMG/EOG/混合伪迹S-RRMSE相对最强基线分别降低18.9%、31.5%、14.0%，真实疲劳分类准确率较未处理输入提升6.20-6.69个百分点 |
+| 74 | EEG-CPDD | 2026 | 协方差保持的条件扩散EEG去噪框架，面向EEG源定位前处理；针对MSE驱动去噪容易过平滑、破坏空间协方差的问题，通过概率式信号重建和噪声信息引导来保持源定位所需的协方差结构... | [EEG-CPDD: A Covariance-Preserving Diffusion Denoiser for Reliable EEG Source Localization](https://ieeexplore.ieee.org/document/11683990) | IEEE JBHI | - | Guangdong University of Technology + Chongqing University of Posts and Telecommunications | IEEE Fellow 李远清老师组论文；噪声预测网络 RLinDenoiseNet 结合 RLinFormer 低秩注意力、FFiLM 频域噪声水平注入和 SEFuse 双流通道注意力融合；摘要报告在多个benchmark上提升去噪效果、保持空间协方差，并在多种源定位算法中降低偶极定位误差、提升能量重建和参数鲁棒性；DOI: 10.1109/JBHI.2026.3732549 |
 
 ---
 
