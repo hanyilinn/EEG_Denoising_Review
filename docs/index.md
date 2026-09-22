@@ -135,7 +135,7 @@ title: EEG Research Review
 
 ### 1.2 传统EEG去噪方法 (Traditional EEG Denoising)
 
-> 主要整理传统/信号处理类方法，共收录 **12** 条记录
+> 主要整理传统/信号处理类方法，共收录 **13** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -151,6 +151,7 @@ title: EEG Research Review
 | 10 | GVICA | 2026 | “GWO优化VMD + 熵筛选ICA”的无参考、多层级自适应去噪框架... | GVICA: A multi-channel EEG hierarchical noise reduction framework based on GWO dynamically optimized VMD-ICA fusion | IEEE TBME | - | Guangdong University of Technology | 引用了ASTI-Net |
 | 11 | GED | 2026 | 利用广义特征分解，通过对比静息态 EEG（干净参考）和运动态 EEG（含伪影）的协方差矩阵，识别并去... | Suppressing Non-Stationary Motion Artefacts in Mobile EEG Using Generalized Eigenvalue Decomposition | Sensors | - | University "G. d'Annunzio" of Chieti-Pescara, Chieti, Italy | 用了打乒乓球的数据 |
 | 12 | ICA-S3M | 2026 | ICA与switching state-space model结合；先将多通道EEG分解为独立成分，再对每个保留IC建模神经振荡和宽带伪迹状态，输出逐时间点artifact probability，无需训练数据... | [ICA-S3M: switching state-space model guided automatic EEG artifact removal from independent components](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2026.1865301/full) | Frontiers in Neuroscience | - | Stanford Medicine | 面向EMG伪迹与“EMG smearing”问题；将神经振荡建模为基于记录自身频谱拟合的阻尼振荡器，将宽带伪迹建模为AR(2)过程，并与EEGdenoiseNet CNN在仿真、半合成真实EEG和自然听音乐记录中比较 |
+| 13 | SPAR-EEG | 2026 | 面向无辅助通道、无伪迹标签和无人工选择干净基线的可穿戴单通道EEG；依次以VMD选择性衰减高频EMG爆发，并以SSA分别处理眨眼样EOG瞬态和缓慢运动漂移，只在伪迹主导区域按自适应强度衰减，而非全局删除信号成分 | [SPAR-EEG: Selective Pass-Wise Artifact Reduction for Wearable Single-Channel EEG Denoising](https://doi.org/10.1109/TNSRE.2026.3734253) | IEEE TNSRE | - | Auckland University of Technology + New Zealand College of Chiropractic | 在EEGdenoiseNet的26个输入SNR水平上，EMG、EOG和混合伪迹区域的平均SNR提升分别为9.05、8.28和8.00 dB；还通过PhysioBank、ERP保持、干电极运动EEG及仅使用FP1/FP2的RSVP/P300拼写任务验证，P300重复曲线AUC提高0.048，Letter@15准确率提高7.8个百分点；PMID: 42747931 |
 
 ---
 
