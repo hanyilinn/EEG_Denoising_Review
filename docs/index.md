@@ -40,7 +40,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **74** 条记录（截至2026年）
+> 共收录 **75** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -50,7 +50,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 15 |
+| 2026 | 16 |
 
 #### 1.1.2 方法详情
 
@@ -130,6 +130,7 @@ title: EEG Research Review
 | 72 | Gated Artifact Management | 2026 | 面向低密度干电极眼镜式EEG的门控伪迹管理管线；先用轻量级gate classifier识别含伪迹窗口，仅在需要时触发后续处理，再结合时域特征检测、卷积循环网络三分类伪迹识别和U-Net去噪自编码器进行校正... | [A Gated Artifact Management Pipeline for Low-Density Eyewear EEG](https://iopscience.iop.org/article/10.1088/1361-6579/ae99ab) | Physiological Measurement | - | Politecnico di Milano + EssilorLuxottica SA + Università di Pavia | 针对可穿戴眼镜式低密度EEG；29名受试者留一被试评估，gate balanced accuracy 0.89，三类伪迹分类balanced accuracy 0.84、median macro-F1 0.83，端到端median normalized RMSE 0.19、spectral cosine similarity 0.89；强调避免对干净神经活动过度处理并兼容资源受限设备 |
 | 73 | MTGNet | 2026 | 任务导向、频谱引导的EEG去噪框架；用并行Mamba-Transformer主干建模时频依赖，Guidance Network估计噪声强度，TACR-LoRA在无干净参考的下游任务上做轻量适配... | [MTGNet: A task-oriented and spectrally guided framework for EEG denoising](https://iopscience.iop.org/article/10.1088/1741-2552/ae9ef1) | Journal of Neural Engineering | - | Tianjin University + Tiangong University | 在EEGDenoiseNet上处理EMG/EOG/混合伪迹，并在MDD半仿真分类和真实疲劳EEG分类中验证下游效用；报告EMG/EOG/混合伪迹S-RRMSE相对最强基线分别降低18.9%、31.5%、14.0%，真实疲劳分类准确率较未处理输入提升6.20-6.69个百分点 |
 | 74 | EEG-CPDD | 2026 | 协方差保持的条件扩散EEG去噪框架，面向EEG源定位前处理；针对MSE驱动去噪容易过平滑、破坏空间协方差的问题，通过概率式信号重建和噪声信息引导来保持源定位所需的协方差结构... | [EEG-CPDD: A Covariance-Preserving Diffusion Denoiser for Reliable EEG Source Localization](https://ieeexplore.ieee.org/document/11683990) | IEEE JBHI | - | Guangdong University of Technology + Chongqing University of Posts and Telecommunications | IEEE Fellow 李远清老师组论文；噪声预测网络 RLinDenoiseNet 结合 RLinFormer 低秩注意力、FFiLM 频域噪声水平注入和 SEFuse 双流通道注意力融合；摘要报告在多个benchmark上提升去噪效果、保持空间协方差，并在多种源定位算法中降低偶极定位误差、提升能量重建和参数鲁棒性；DOI: 10.1109/JBHI.2026.3732549 |
+| 75 | Diff-ADN | 2026 | 两阶段单通道去噪框架：先按伪迹严重度进行初步重建，再用扩散训练得到的残差编码器执行一次确定性修正，推理时无需迭代反向扩散；覆盖EOG、EMG、ECG及混合伪迹... | [Diff-ADN: A diffusion-guided artifact denoising network with deterministic residual refinement for EEG](https://pubmed.ncbi.nlm.nih.gov/42772331/) | Journal of Neural Engineering | - | Northwestern Polytechnical University | 在4个公开运动想象数据集上检验去噪后的解码恢复；ECG去噪通常恢复4.88–5.59个百分点，BCI IV-2a在-6 dB PTB-ECG污染下最高恢复21.90个百分点；同时指出波形重建指标改善不一定对应BCI准确率的等比例恢复；DOI: 10.1088/1741-2552/aeab36 |
 
 ---
 
@@ -174,7 +175,7 @@ title: EEG Research Review
 
 ### 1.4 EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **12** 条记录
+> 共收录 **13** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -190,6 +191,7 @@ title: EEG Research Review
 | 10 | EEG-AI | 2026 | 构建human-in-the-loop的EEG预处理智能体系统，由LLM驱动决策agent调用EEG分析工具，结合标准预处理、多个ICA/伪迹分类器概率输出和迭代推理循环，决定ICA成分保留/剔除及是否重跑分析；每轮通过closed-loop policy复评以提高可复现性、可审计性和专家监督效率 | [EEG-AI: An agentic system for AI-assisted semi-automated EEG preprocessing and artifact removal](https://www.sciencedirect.com/science/article/pii/S0165027026000890) | Journal of Neuroscience Methods | - | Unity Health Toronto + University of Toronto + Western University + Toronto Metropolitan University | EEG agent方向的代表性系统论文；在合成EEG和专家标注真实数据上评估artifact detection、ICA分类和重建质量，相对专家标注基线报告Pearson r=0.666±0.188、RMSE=5×10^-6±1×10^-6 |
 | 11 | AutocleanEEG-ICVision | 2026 | 在EEG Autoclean平台中加入基于视觉语言模型的ICA伪迹分类agent，将ICA dashboard的地形图、频谱、时间序列等可视化作为输入，自动输出脑源/眼动/肌肉/心电/通道噪声等类别、置信度和可解释理由，用于半自动artifact rejection和人工复核 | [AutocleanEEG - ICVision: Automated ICA Artifact Classification Using Vision-Language AI](https://ieeexplore.ieee.org/document/11539774) | ICMI 2026 | 是 | Cincinnati Children’s Hospital / University of Cincinnati | 面向AI-assisted EEG preprocessing与XAI；关键词包括AI-agent、Vision-language AI、ICA component、artifact rejection和BCI；适合作为智能体/多模态AI辅助EEG去噪工具方向补充 |
 | 12 | MTGNet | 2026 | 先用EEGDenoiseNet学习通用去噪先验，再通过TACR-LoRA在MDD和疲劳分类任务中只依赖任务标签适配，目标是“去噪后下游分类仍有用”而不是单纯压低重构误差 | [MTGNet: A task-oriented and spectrally guided framework for EEG denoising](https://iopscience.iop.org/article/10.1088/1741-2552/ae9ef1) | JNE | - | Tianjin University + Tiangong University | 使用ShallowNet、TCNet、EEGNet做跨分类器验证，并做Dataset II/III跨数据集迁移；结果表明MTGNet不是只服务某一个分类器，但作者也承认真实任务只验证了MDD和疲劳，泛化到MI、睡眠、情绪、癫痫等还需进一步验证 |
+| 13 | SQI-GEDAI Benchmark | 2026 | 在统一无伪迹处理基线下系统比较9种自动EEG伪迹处理方法，并提出SQI引导的GEDAI，仅修正信号质量较差的通道—时间段，以减少对原始EEG的不必要改动... | [Automated Artifact Removal in EEG Age Prediction: A systematic comparison](https://arxiv.org/abs/2609.31195) | Arxiv | - | Yneuro + collaborating institutions | 在TUEG训练脑龄模型，并零目标域拟合地测试ds005385、LEMON和TDBRAIN；只有GEDAI与SQI-GEDAI在3种深度网络上稳定改善MAE和R²，其余方法平均无益或有害；SQI门控将中位修改比例由74.78%降至42.80%，说明伪迹处理必须用目标下游任务验证 |
 
 ---
 
@@ -197,7 +199,7 @@ title: EEG Research Review
 
 #### 1.5.1 核心基础模型论文
 
-> 共收录 **12** 条记录
+> 共收录 **13** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -213,6 +215,7 @@ title: EEG Research Review
 | 10 | CEReBrO | 2025 | Compact Encoder for Representations of Brain Oscillations，使用per-channel patch tokenization和alternating attention同时建模通道内时间动态与跨通道空间关系... | [CEReBrO: Compact Encoder for Representations of Brain Oscillations Using Efficient Alternating Attention](https://arxiv.org/abs/2501.10885) | Arxiv | [是](https://github.com/pulp-bio/BioFoundation) | ETH Zurich + University of Bologna | 小型、可复现、偏高效EEG基础模型；后续S-CEReBrO扩展到连续EEG监测 |
 | 11 | ZUNA / ZUNA1.1 | 2026 | 380M参数扩散自编码EEG/BCI基础模型，面向任意通道布局的EEG重建、缺失通道补全、去噪和超分辨率；ZUNA1.1进一步支持更灵活的变长序列与局部片段重建... | [ZUNA](https://arxiv.org/abs/2602.18478) / [ZUNA1.1](https://arxiv.org/abs/2607.27308) | Arxiv | [是](https://huggingface.co/Zyphra/ZUNA1.1) | Zyphra | 与EEG去噪网页高度相关，已在深度学习去噪表中单独列为ZUNA1.1 |
 | 12 | MSBraM | 2026 | Multi-Scale self-supervised Brain foundation Model，先用多尺度neural tokenizer将原始EEG离散为不同时间分辨率semantic codes，再用curriculum multi-scale masking学习层级动态... | [MSBraM: A Multi-scale Self-supervised Brain Foundation Model for Hierarchical EEG Dynamics Learning](https://arxiv.org/abs/2607.21402) | Arxiv | - | - | 强调EEG内在多尺度时间结构，适合作为后LaBraM时代的多尺度自监督路线 |
+| 13 | EEGDM | 2026 | 基于生成式扩散的EEG自监督表征学习框架；使用结构化状态空间模型进行扩散预训练以捕获长程时间依赖，再通过Latent Fusion Module融合多层扩散表征完成下游分类... | [EEGDM: Label-Efficient EEG Representation Learning with Generative Diffusion Model](https://doi.org/10.1109/JBHI.2026.3737616) | IEEE JBHI | [是](https://github.com/jhpuah/EEGDM) | Xiamen University Malaysia + University Malaya Medical Center + collaborators | 在TUEV事件分类、CHB-MIT癫痫检测和IIIC癫痫分类上验证；强调以更少预训练和适配样本获得有竞争力的结果，并开源训练代码与预训练/微调检查点；由2025年预印本更新为2026年正式期刊论文 |
 
 #### 1.5.2 基础模型评测与适配研究
 
@@ -230,7 +233,7 @@ title: EEG Research Review
 
 ### 1.6 EEG Agent相关研究 (EEG Agent Related Studies)
 
-> 共收录 **4** 条记录
+> 共收录 **5** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -238,6 +241,7 @@ title: EEG Research Review
 | 2 | BrainAgent | 2026 | LLM驱动的多智能体脑信号理解框架，由中心supervisor协调多个专门子智能体，将自然语言意图转化为可执行的端到端脑信号处理流程... | [BrainAgent: A Large Language Model-Driven Multi-Agent Framework for Autonomous Brain Signal Understanding](https://arxiv.org/abs/2606.25400) | Arxiv | - | Zhejiang University | 进一步强调层级式多智能体、长流程自动化和脑信号分析benchmark，覆盖范围比单纯EEG更广 |
 | 3 | EasyBCI Agent | 2026 | 面向BCI/神经数据预处理的两阶段LLM智能体；Plan Agent生成不暴露原始数据的Data Fingerprint并选择文献依据的算子序列，Execution Agent生成、运行并自纠错代码，结合质量门控经验库复用策略... | [EasyBCI Agent: Towards Universal Neural Data Preprocessing for Brain-Computer Interfaces](https://arxiv.org/abs/2607.29007) | Arxiv | - | - | 与EEG去噪/预处理最相关；在EEG固定线性分类器评估中，报告比人工pipeline更能保留下游任务相关可分性 |
 | 4 | CogEEGAgent | 2026 | 面向认知EEG分析的可审计智能体，基于MNE-Python，将LLM意图理解与确定性科学执行分离，并通过typed contracts、confirmation access控制和selection-aware verification降低自适应搜索带来的假阳性风险... | [CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification](https://arxiv.org/abs/2607.25045) | Arxiv | [是](https://github.com/dengzhe-hou/CogEEGAgent) | Tohoku University | 更偏认知EEG统计分析自动化；对未来构建可审计EEG benchmark agent有参考价值 |
+| 5 | AutoBCI | 2026 | 面向跨任务EEG解码网络设计的双智能体框架：Designer Agent基于多轮实验反馈生成和改进网络结构，Forecaster Agent结合模型代码、训练协议和早期学习曲线预测完整训练性能并筛选候选模型... | [AutoBCI: Forecast-Guided Agentic Neural Architecture Discovery for EEG-Based Brain-Computer Interfaces](https://arxiv.org/abs/2609.35456) | Arxiv | - | Nanyang Technological University + The University of Hong Kong + Southeast University | 在运动想象、情绪识别和睡眠分期共14个数据集上评估6种LLM；最佳自动发现架构平均balanced accuracy为64.16%，略高于REVE的63.87%；PEEK将早期性能预测MAE由2.20降至1.36个百分点，并估计减少44.9%的训练epoch |
 
 ---
 
