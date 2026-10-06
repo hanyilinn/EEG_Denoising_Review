@@ -3,15 +3,9 @@ layout: default
 title: EEG Research Review
 ---
 
-## EEG Research Papers, Publication Venues & Datasets Survey
+## 按主题浏览
 
-👁️ EEG研究论文、投稿期刊与数据集调研
-
-整理EEG去噪、EEG基础模型、EEG智能体、下游任务、可投稿期刊和常用数据集，便于快速了解该领域进展。
-
----
-
-## 目录
+<nav class="resource-nav" aria-label="研究资源目录" markdown="1">
 
 1. [研究论文整理](#一研究论文整理-research-papers)
    - [深度学习EEG去噪方法](#11-深度学习eeg去噪方法-deep-learning-eeg-denoising)
@@ -22,14 +16,14 @@ title: EEG Research Review
    - [EEG Agent相关研究](#16-eeg-agent相关研究-eeg-agent-related-studies)
    - [EEG Benchmark相关研究](#17-eeg-benchmark相关研究-eeg-benchmark-related-studies)
 2. [可投稿期刊整理](#二可投稿期刊整理-publication-venues)
-   - [EEG去噪可投稿期刊（已有EEG去噪论文发表）](#21-eeg去噪可投稿期刊-期刊已有eeg去噪论文发表)
+   - [EEG去噪可投稿期刊（已有EEG去噪论文发表）](#21-eeg去噪可投稿期刊已有eeg去噪论文发表)
    - [EEG领域下其他可供选择的期刊](#22-eeg领域下其他可供选择的期刊-other-journals-in-eeg-field)
 3. [数据集整理](#三数据集整理-datasets)
    - [EEG去噪数据集](#31-eeg去噪数据集-eeg-denoising-datasets)
    - [运动想象数据集](#32-运动想象数据集-motor-imagery-datasets)
    - [情绪识别数据集](#33-情绪识别数据集-emotion-recognition-datasets)
 
----
+</nav>
 
 ## 一、研究论文整理 (Research Papers)
 

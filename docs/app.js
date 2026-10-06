@@ -45,6 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
     table.parentNode.insertBefore(wrapper, table);
     wrapper.appendChild(table);
 
+    if (table.querySelectorAll("thead th").length >= 7) {
+      table.classList.add("wide-table");
+      wrapper.tabIndex = 0;
+      wrapper.setAttribute("aria-label", "表格可左右滚动");
+    }
+    if (
+      [...table.querySelectorAll("thead th")].some(
+        (header) => header.textContent.trim() === "文章名称"
+      )
+    ) {
+      table.classList.add("paper-table");
+    }
+
     const body = table.tBodies[0];
     if (!body) return;
 
