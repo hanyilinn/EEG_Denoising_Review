@@ -40,7 +40,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **75** 条记录（截至2026年）
+> 共收录 **76** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -50,7 +50,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 16 |
+| 2026 | 17 |
 
 #### 1.1.2 方法详情
 
@@ -131,6 +131,7 @@ title: EEG Research Review
 | 73 | MTGNet | 2026 | 任务导向、频谱引导的EEG去噪框架；用并行Mamba-Transformer主干建模时频依赖，Guidance Network估计噪声强度，TACR-LoRA在无干净参考的下游任务上做轻量适配... | [MTGNet: A task-oriented and spectrally guided framework for EEG denoising](https://iopscience.iop.org/article/10.1088/1741-2552/ae9ef1) | Journal of Neural Engineering | - | Tianjin University + Tiangong University | 在EEGDenoiseNet上处理EMG/EOG/混合伪迹，并在MDD半仿真分类和真实疲劳EEG分类中验证下游效用；报告EMG/EOG/混合伪迹S-RRMSE相对最强基线分别降低18.9%、31.5%、14.0%，真实疲劳分类准确率较未处理输入提升6.20-6.69个百分点 |
 | 74 | EEG-CPDD | 2026 | 协方差保持的条件扩散EEG去噪框架，面向EEG源定位前处理；针对MSE驱动去噪容易过平滑、破坏空间协方差的问题，通过概率式信号重建和噪声信息引导来保持源定位所需的协方差结构... | [EEG-CPDD: A Covariance-Preserving Diffusion Denoiser for Reliable EEG Source Localization](https://ieeexplore.ieee.org/document/11683990) | IEEE JBHI | - | Guangdong University of Technology + Chongqing University of Posts and Telecommunications | IEEE Fellow 李远清老师组论文；噪声预测网络 RLinDenoiseNet 结合 RLinFormer 低秩注意力、FFiLM 频域噪声水平注入和 SEFuse 双流通道注意力融合；摘要报告在多个benchmark上提升去噪效果、保持空间协方差，并在多种源定位算法中降低偶极定位误差、提升能量重建和参数鲁棒性；DOI: 10.1109/JBHI.2026.3732549 |
 | 75 | Diff-ADN | 2026 | 两阶段单通道去噪框架：先按伪迹严重度进行初步重建，再用扩散训练得到的残差编码器执行一次确定性修正，推理时无需迭代反向扩散；覆盖EOG、EMG、ECG及混合伪迹... | [Diff-ADN: A diffusion-guided artifact denoising network with deterministic residual refinement for EEG](https://pubmed.ncbi.nlm.nih.gov/42772331/) | Journal of Neural Engineering | - | Northwestern Polytechnical University | 在4个公开运动想象数据集上检验去噪后的解码恢复；ECG去噪通常恢复4.88–5.59个百分点，BCI IV-2a在-6 dB PTB-ECG污染下最高恢复21.90个百分点；同时指出波形重建指标改善不一定对应BCI准确率的等比例恢复；DOI: 10.1088/1741-2552/aeab36 |
+| 76 | EEG-WNet | 2026 | 轻量级小波引导双分支网络：联合时域建模与小波先验学习，并通过跨注意力融合、残差引导细化和多尺度通道—空间注意力提升眼电伪迹重建质量与推理效率 | [EEG-WNet: A wavelet-guided dual-branch network for ocular artifact suppression in electroencephalogram](https://www.sciencedirect.com/science/article/pii/S1746809426021117) | Biomedical Signal Processing and Control | - | Tongji University | 以半合成EOG污染为主，并补充EMG和合成噪声实验；在EEGdenoiseNet上报告RRMSE_t=0.212、SNR=15.42 dB、CC=0.967，另在DEAP真实记录上做定性迁移；8.48M参数、CPU推理1.34 ms；在线发表于2026年，编入2027年卷；DOI: 10.1016/j.bspc.2026.111553 |
 
 ---
 
@@ -233,7 +234,7 @@ title: EEG Research Review
 
 ### 1.6 EEG Agent相关研究 (EEG Agent Related Studies)
 
-> 共收录 **5** 条记录
+> 共收录 **6** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -242,6 +243,7 @@ title: EEG Research Review
 | 3 | EasyBCI Agent | 2026 | 面向BCI/神经数据预处理的两阶段LLM智能体；Plan Agent生成不暴露原始数据的Data Fingerprint并选择文献依据的算子序列，Execution Agent生成、运行并自纠错代码，结合质量门控经验库复用策略... | [EasyBCI Agent: Towards Universal Neural Data Preprocessing for Brain-Computer Interfaces](https://arxiv.org/abs/2607.29007) | Arxiv | - | - | 与EEG去噪/预处理最相关；在EEG固定线性分类器评估中，报告比人工pipeline更能保留下游任务相关可分性 |
 | 4 | CogEEGAgent | 2026 | 面向认知EEG分析的可审计智能体，基于MNE-Python，将LLM意图理解与确定性科学执行分离，并通过typed contracts、confirmation access控制和selection-aware verification降低自适应搜索带来的假阳性风险... | [CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification](https://arxiv.org/abs/2607.25045) | Arxiv | [是](https://github.com/dengzhe-hou/CogEEGAgent) | Tohoku University | 更偏认知EEG统计分析自动化；对未来构建可审计EEG benchmark agent有参考价值 |
 | 5 | AutoBCI | 2026 | 面向跨任务EEG解码网络设计的双智能体框架：Designer Agent基于多轮实验反馈生成和改进网络结构，Forecaster Agent结合模型代码、训练协议和早期学习曲线预测完整训练性能并筛选候选模型... | [AutoBCI: Forecast-Guided Agentic Neural Architecture Discovery for EEG-Based Brain-Computer Interfaces](https://arxiv.org/abs/2609.35456) | Arxiv | - | Nanyang Technological University + The University of Hong Kong + Southeast University | 在运动想象、情绪识别和睡眠分期共14个数据集上评估6种LLM；最佳自动发现架构平均balanced accuracy为64.16%，略高于REVE的63.87%；PEEK将早期性能预测MAE由2.20降至1.36个百分点，并估计减少44.9%的训练epoch |
+| 6 | autoSCORE | 2026 | 将卷积神经网络SCORE-AI集成进商用EEG阅读器，把长时EEG自动切分为2小时片段，判断正常/异常并识别4类异常模式，同时给出按概率排序的时间标记供临床专家快速复核和修正 | [Clinical validation of autoSCORE: A human-in-the-loop AI tool for interpretation of long-term EEG recordings](https://www.sciencedirect.com/science/article/pii/S1388245726009302) | Clinical Neurophysiology | - | International multicenter clinical EEG consortium | 使用40段住院和40段动态长时EEG（年龄0.9–82.3岁），以3名专家独立判读形成参考标准；AI与专家总体准确率相当，局灶性非癫痫异常检测更优；每类只复核概率最高的10个标记即可用完整片段1.5%–5.5%的内容纠正所有异常片段。它不是LLM agent，但属于高价值的人机协同EEG智能工具；DOI: 10.1016/j.clinph.2026.2112430 |
 
 ---
 
