@@ -258,124 +258,130 @@ title: EEG Research Review
 
 该部分整理EEG去噪及相关EEG研究可考虑的投稿期刊，区分已有EEG去噪论文发表的期刊与更广泛的EEG领域候选期刊。
 
+**指标更新：2026-10-08。** 影响因子（JIF）与CiteScore采用2025统计年度、2026年发布的最新年值；不是2026年实时预测值。点击数值可查看本次采用的来源。优先使用出版商官网，官网不可访问或未标明年度时使用高校研究门户及公开指标汇总（BioxBio、Journal Indexes、LetPub等）；二级来源数据仅供选刊参考，正式评价以[JCR](https://jcr.clarivate.com/)和[Scopus](https://www.scopus.com/sources)为准。“未查到”不等于0。
+
+> **分区口径更正：** [中科院文献情报中心已宣布自2026年起停止更新与发布期刊分区表](https://cssar.cas.cn/library/dtxx/202604/t20260409_8183275.html)。本页只展示独立第三方的**2026年新锐分区**，不称为“2026年中科院分区”，也不与JCR/Scopus的Q1–Q4混用。分区逐条对照[承德医学院公开的2026年新锐分区名单](https://kjc.cdmc.edu.cn/art/2026/4/1/art_299_101218.html)；该名单不含TOP字段，因此不保留未经核验的TOP标记。发布机构与口径见[新锐分区介绍](https://www.xr-scholar.com/Docs/RankingIntro)。
+
+年文章数及备注中的自引率沿用原记录，统计年度未核验；本次只更新分区、JIF与CiteScore。
+
 ### 2.1 EEG去噪可投稿期刊（已有EEG去噪论文发表）
 
 > 共收录 **29** 条期刊（按学科分类）
 
 #### 2.1.1 医学
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [IEEE Journal of Biomedical and Health Informatics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020) | IEEE JBHI | 二区TOP | 一区TOP | 6.8 | 659 | IEEE | - |
-| 2 | [NeuroImage](https://www.sciencedirect.com/journal/neuroimage) | NeuroImage | 二区TOP | 二区TOP | 4.5 | 447 | Elsevier | - |
-| 3 | [Biomedical Signal Processing and Control](https://www.sciencedirect.com/journal/biomedical-signal-processing-and-control) | BSPC | 二区 | 二区TOP | 4.9 | 1370 | Elsevier | - |
-| 4 | [IEEE Transactions on Biomedical Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10) | IEEE TBME | 二区 | 二区TOP | 4.5 | 331 | IEEE | - |
-| 5 | [IEEE Transactions on Neural Systems and Rehabilitation Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7333) | IEEE TNSRE | 二区 | 二区TOP | 5.2 | 407 | IEEE | - |
-| 6 | [Computers in Biology and Medicine](https://www.sciencedirect.com/journal/computers-in-biology-and-medicine) | CiBM | 二区 | - | 6.3 | 274 | Elsevier | On Hold，2025年11月踢出SCI |
-| 7 | [CNS Neuroscience & Therapeutics](https://onlinelibrary.wiley.com/journal/17555949) | CNSNT | 二区 | 二区TOP | 5 | 490 | Wiley-Blackwell | - |
-| 8 | [Journal of Neural Engineering](https://iopscience.iop.org/journal/1741-2552) | JNE | 三区 | 二区TOP | 3.8 | 320 | IOP Publishing | - |
-| 9 | [IEEE Journal of Translation Engineering in Health and Medicine](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) | IEEE JTEHM | 三区 | 二区 | 4.4 | 69 | IEEE | - |
-| 10 | [Frontiers in Human Neuroscience](https://www.frontiersin.org/journals/human-neuroscience) | FHN | 四区 | 三区 | 2.7 | 462 | Frontiers | - |
-| 11 | [Computer Methods in Biomechanics and Biomedical Engineering](https://www.tandfonline.com/journals/gcmb20) | CMBBE | 四区 | 四区 | 1.6 | 229 | Taylor & Francis | - |
-| 12 | [Neuroscience](https://www.sciencedirect.com/journal/neuroscience) | Neuroscience | 四区 | 四区 | 2.8 | 478 | Elsevier | - |
-| 13 | [Biomedical Physics & Engineering Express](https://iopscience.iop.org/journal/2057-1976) | BPEE | 四区 | - | 1.6 | 279 | IOP Publishing | - |
+| 1 | [IEEE Journal of Biomedical and Health Informatics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020) | IEEE JBHI | 一区 | [7.7](https://www.bioxbio.com/journal/IEEE-J-BIOMED-HEALTH) | [14.3](https://journalindexes.com/ieee-journal-of-biomedical-and-health-informatics-21682194/) | 659 | IEEE | - |
+| 2 | [NeuroImage](https://www.sciencedirect.com/journal/neuroimage) | NeuroImage | 二区 | [5.3](https://www.bioxbio.com/journal/NEUROIMAGE) | [9.6](https://journalindexes.com/neuroimage-10538119/) | 447 | Elsevier | - |
+| 3 | [Biomedical Signal Processing and Control](https://www.sciencedirect.com/journal/biomedical-signal-processing-and-control) | BSPC | 二区 | [5.7](https://www.bioxbio.com/journal/BIOMED-SIGNAL-PROCES) | [13.0](https://fis.tu-dresden.de/portal/en/journals/biomedical-signal-processing-and-control%28a559a689-bbdc-42a7-8a1e-f8d7ae65936f%29.html) | 1370 | Elsevier | - |
+| 4 | [IEEE Transactions on Biomedical Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10) | IEEE TBME | 二区 | [4.4](https://www.bioxbio.com/journal/IEEE-T-BIO-MED-ENG) | [10.0](https://fis.tu-dresden.de/portal/en/journals/ieee-transactions-on-biomedical-engineering%28c5ee94b3-9b63-4df7-8949-3276ef827af7%29.html) | 331 | IEEE | - |
+| 5 | [IEEE Transactions on Neural Systems and Rehabilitation Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7333) | IEEE TNSRE | 二区 | [6.6](https://www.bioxbio.com/journal/IEEE-T-NEUR-SYS-REH) | [11.0](https://journalindexes.com/ieee-transactions-on-neural-systems-and-rehabilitation-engineering-15344320/) | 407 | IEEE | - |
+| 6 | [Computers in Biology and Medicine](https://www.sciencedirect.com/journal/computers-in-biology-and-medicine) | CiBM | 未列入 | 未查到 | [13.1](https://fis.tu-dresden.de/portal/en/journals/computers-in-biology-and-medicine%2800a4f59b-c47e-4bed-b6a3-ca5ca1e0a866%29.html) | 274 | Elsevier | 未查到2025 JIF；投稿前核实WoS收录状态 |
+| 7 | [CNS Neuroscience & Therapeutics](https://onlinelibrary.wiley.com/journal/17555949) | CNSNT | 二区 | [6.6](https://www.bioxbio.com/journal/CNS-NEUROSCI-THER) | [8.5](https://onlinelibrary.wiley.com/journal/17555949) | 490 | Wiley-Blackwell | - |
+| 8 | [Journal of Neural Engineering](https://iopscience.iop.org/journal/1741-2552) | JNE | 二区 | [4.0](https://www.bioxbio.com/journal/J-NEURAL-ENG) | [6.9](https://journalindexes.com/journal-of-neural-engineering-17412552/) | 320 | IOP Publishing | - |
+| 9 | [IEEE Journal of Translational Engineering in Health and Medicine](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221039) | IEEE JTEHM | 二区 | [3.9](https://sci.justscience.cn/details.html?id=14211&sci=1) | [10.2](https://journalindexes.com/ieee-journal-of-translational-engineering-in-health-and-medicine-21682372/) | 69 | IEEE | - |
+| 10 | [Frontiers in Human Neuroscience](https://www.frontiersin.org/journals/human-neuroscience) | FHN | 三区 | [3.6](https://www.bioxbio.com/journal/FRONT-HUM-NEUROSCI) | [5.9](https://journalindexes.com/frontiers-in-human-neuroscience-16625161/) | 462 | Frontiers | - |
+| 11 | [Computer Methods in Biomechanics and Biomedical Engineering](https://www.tandfonline.com/journals/gcmb20) | CMBBE | 四区 | [1.9](https://www.bioxbio.com/journal/COMPUT-METHOD-BIOMEC) | [4.6](https://journalindexes.com/computer-methods-in-biomechanics-and-biomedical-engineering-10255842/) | 229 | Taylor & Francis | - |
+| 12 | [Neuroscience](https://www.sciencedirect.com/journal/neuroscience) | Neuroscience | 三区 | [3.3](https://www.bioxbio.com/journal/NEUROSCIENCE) | [4.6](https://journalindexes.com/neuroscience-03064522/) | 478 | Elsevier | - |
+| 13 | [Biomedical Physics & Engineering Express](https://iopscience.iop.org/journal/2057-1976) | BPEE | 四区 | [2.0](https://www.ablesci.com/journal/detail?id=524Qjr) | [2.8](https://journalindexes.com/biomedical-physics-and-engineering-express-20571976/) | 279 | IOP Publishing | - |
 
 #### 2.1.2 计算机科学
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [IEEE Transactions on Neural Networks and Learning Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385) | TNNLS | 一区TOP | 二区TOP | 8.9 | 869 | IEEE | - |
-| 2 | [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) | EAAI | 一区TOP | 一区TOP | 8 | 1909 | Elsevier | - |
-| 3 | [Expert Systems With Applications](https://www.sciencedirect.com/journal/expert-systems-with-applications) | ESWA | 一区TOP | 一区TOP | 7.5  | 2925 | Elsevier | - |
-| 4 | [Knowledge-Based Systems](https://www.sciencedirect.com/journal/knowledge-based-systems) | KBS | 一区TOP | 一区TOP | 7.6 | 1354 | Elsevier | - |
-| 5 | [IEEE Internet of Things Journal](https://ieee-iotj.org/) | IEEE IoTJ | 二区TOP | 一区TOP | 8.9 | 2984 | IEEE | - |
-| 6 | [IEEE Transactions on Consumer Electronics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30) | IEEE TCE | 二区 | 一区TOP | 10.9 | 699 | IEEE | 自引率52.3% |
-| 7 | [IEEE Transactions on Emerging Topics in Computational Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7755) | IEEE TETCI | 二区 | 二区 | 6.5 | 419 | IEEE | - |
-| 8 | [IEEE Transactions on Cognitive and Development systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274989) | IEEE TCDS | 三区 | 二区 | 4.9 | 171 | IEEE | - |
-| 9 | [Electronics](https://www.mdpi.com/journal/electronics) | - | 四区 | - | 2.6 | 5022 | MDPI | - |
-| 10 | [Signal Image and Video Processing](https://www.springer.com/journal/11760) | SIVP | 四区 | - | 2.1 | 634 | Springer | - |
+| 1 | [IEEE Transactions on Neural Networks and Learning Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385) | TNNLS | 二区 | [9.7](https://www.bioxbio.com/journal/IEEE-T-NEUR-NET-LEAR) | [23.7](https://journalindexes.com/ieee-transactions-on-neural-networks-and-learning-systems-2162237X/) | 869 | IEEE | - |
+| 2 | [Engineering Applications of Artificial Intelligence](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence) | EAAI | 一区 | [9.0](https://www.bioxbio.com/journal/ENG-APPL-ARTIF-INTEL) | [11.7](https://fis.tu-dresden.de/portal/en/journals/engineering-applications-of-artificial-intelligence--the-international-journal-of-realtime-automation%2870918efa-cd41-4c2a-8d21-01688d31e6df%29.html) | 1909 | Elsevier | - |
+| 3 | [Expert Systems With Applications](https://www.sciencedirect.com/journal/expert-systems-with-applications) | ESWA | 一区 | [9.4](https://www.bioxbio.com/journal/EXPERT-SYST-APPL) | [17.0](https://fis.tu-dresden.de/portal/en/journals/expert-systems-with-applications--an-international-journal%28635663c1-5308-4ee9-bd93-1779b0080c40%29.html) | 2925 | Elsevier | - |
+| 4 | [Knowledge-Based Systems](https://www.sciencedirect.com/journal/knowledge-based-systems) | KBS | 一区 | [8.0](https://www.bioxbio.com/journal/KNOWL-BASED-SYST) | [13.7](https://fis.tu-dresden.de/portal/en/journals/knowledgebased-systems%28cb8c8519-2e8c-49ca-81d2-89900b6eccfb%29.html) | 1354 | Elsevier | - |
+| 5 | [IEEE Internet of Things Journal](https://ieee-iotj.org/) | IEEE IoTJ | 一区 | [8.7](https://xplorestaging.ieee.org/xpl/topics-issue?punumber=6488907) | [14.7](https://journalindexes.com/ieee-internet-of-things-journal-23274662/) | 2984 | IEEE | - |
+| 6 | [IEEE Transactions on Consumer Electronics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30) | IEEE TCE | 一区 | [9.9](https://www.bioxbio.com/journal/IEEE-T-CONSUM-ELECTR) | [8.1](https://journalindexes.com/ieee-transactions-on-consumer-electronics-00983063/) | 699 | IEEE | 自引率52.3% |
+| 7 | [IEEE Transactions on Emerging Topics in Computational Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7433297) | IEEE TETCI | 二区 | [6.0](https://xplorestaging.ieee.org/xpl/tocresult.jsp?isnumber=11538055&punumber=7433297) | [11.5](https://journalindexes.com/ieee-transactions-on-emerging-topics-in-computational-intelligence-2471285X/) | 419 | IEEE | - |
+| 8 | [IEEE Transactions on Cognitive and Developmental Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7274989) | IEEE TCDS | 二区 | [4.7](https://goingpub.com/journal_detail/2915.html) | [11.1](https://journalindexes.com/ieee-transactions-on-cognitive-and-developmental-systems-23798920/) | 171 | IEEE | - |
+| 9 | [Electronics](https://www.mdpi.com/journal/electronics) | - | 三区 | [2.9](https://www.mdpi.com/news/17132) | [7.0](https://www.mdpi.com/journal/electronics/history) | 5022 | MDPI | - |
+| 10 | [Signal Image and Video Processing](https://www.springer.com/journal/11760) | SIVP | 四区 | [2.7](https://www.bioxbio.com/journal/SIGNAL-IMAGE-VIDEO-P) | [3.9](https://www.letpub.com.cn/index.php?journalid=8221&page=journalapp&view=detail) | 634 | Springer | - |
 
 #### 2.1.3 工程技术
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [Advanced Engineering Informatics](https://www.sciencedirect.com/journal/advanced-engineering-informatics) | AdvEI | 一区TOP | 一区TOP | 9.9 | 658 | Elsevier | - |
-| 2 | [IEEE Transactions on Instrumentation and Measurement](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19) | IEEE TIM | 二区 | 二区TOP | 5.9 | 2532 | IEEE | - |
-| 3 | [Cogent Engineering](https://www.tandfonline.com/journals/oaen20) | \ | 四区 | 三区 | 2.5 | 356 | Taylor & Francis | - |
-| 4 | [Technologies](https://www.mdpi.com/journal/technologies) | \ | 三区 | 三区 | 3.6 | 262 | MDPI | - |
+| 1 | [Advanced Engineering Informatics](https://www.sciencedirect.com/journal/advanced-engineering-informatics) | AdvEI | 一区 | [11.5](https://www.bioxbio.com/journal/ADV-ENG-INFORM) | [15.8](https://fis.tu-dresden.de/portal/en/journals/advanced-engineering-informatics%289ab8f114-666e-4cc4-bf79-0ba9552fae7c%29.html) | 658 | Elsevier | - |
+| 2 | [IEEE Transactions on Instrumentation and Measurement](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19) | IEEE TIM | 二区 | [7.0](https://www.bioxbio.com/journal/IEEE-T-INSTRUM-MEAS) | [9.8](https://fis.tu-dresden.de/portal/de/journals/ieee-transactions-on-instrumentation-and-measurement%289068506e-490f-4808-8819-c257fd814fde%29.html) | 2532 | IEEE | - |
+| 3 | [Cogent Engineering](https://www.tandfonline.com/journals/oaen20) | \ | 三区 | [2.7](https://www.tandfonline.com/action/journalInformation?journalCode=oaen20) | [6.9](https://journalindexes.com/cogent-engineering-23311916/) | 356 | Taylor & Francis | - |
+| 4 | [Technologies](https://www.mdpi.com/journal/technologies) | \ | 三区 | [5.2](https://www.mdpi.com/journal/technologies/history) | [6.7](https://journalindexes.com/technologies-22277080/) | 262 | MDPI | - |
 
 #### 2.1.4 综合性期刊
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [IEEE Sensors Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361) | IEEE SJ | 三区 | 二区 | 4.5 | 3965 | IEEE | - |
-| 2 | [Sensors](https://www.mdpi.com/journal/sensors) | Sen. | 三区 | 三区 | 3.5 | 8165 | MDPI | - |
+| 1 | [IEEE Sensors Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361) | IEEE SJ | 二区 | [4.5](https://www.bioxbio.com/journal/IEEE-SENS-J) | [7.8](https://fis.tu-dresden.de/portal/en/journals/ieee-sensors-journal%28c28b1ba9-dc24-4e05-9546-737744c349a4%29.html) | 3965 | IEEE | - |
+| 2 | [Sensors](https://www.mdpi.com/journal/sensors) | Sen. | 三区 | [4.0](https://www.bioxbio.com/journal/SENSORS-BASEL) | [9.4](https://www.mdpi.com/journal/sensors/history) | 8165 | MDPI | - |
 
 
 ---
 
 ### 2.2 EEG领域下其他可供选择的期刊 (Other Journals in EEG Field)
 
-> 共收录 **35** 条期刊（按学科分类）
+> 共收录 **34** 条期刊（按学科分类）
 
 #### 2.2.1 计算机科学
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [IEEE Transactions on Pattern Analysis and Machine Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34) | IEEE TPAMI | 一区TOP | 一区TOP | 18.6 | 732 | IEEE | - |
-| 2 | [Cyborg and Bionic Systems](https://spj.science.org/journal/cbs) | CBS | 一区TOP | 一区TOP | 18.1 | 65 |  AAAS | 中国科学院自动化研究所与美国科学促进会合作出版 |
-| 3 | [Information Fusion](https://www.sciencedirect.com/journal/information-fusion) | Inf. Fus. | 一区TOP | 一区TOP | 15.5  | 554 | Elsevier | - |
-| 4 | [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69) | IEEE TKDE | 一区TOP | 二区TOP | 10.4 | 666 | IEEE | - |
-| 5 | [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) | IEEE TCYB | 一区TOP | 一区TOP | 10.5 | 441 | IEEE | - |
-| 6 | [IEEE Transactions on Industrial Informatics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | IEEE TII | 一区TOP | 一区TOP | 9.9 | 1132 | IEEE | - |
-| 7 | [IEEE Transactions on Multimedia](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046) | IEEE TMM | 一区TOP | 一区TOP | 9.7 | 872 | IEEE | - |
-| 8 | [IEEE Transactions on Systems Man Cybernetics-Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221037) | IEEE TSMC | 一区TOP | 一区TOP | 8.7 | 667 | IEEE | - |
-| 9 | [Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition) | PR | 一区TOP | 一区TOP | 7.6 | 966 | Elsevier | - |
-| 10 | [Neural Networks](https://www.sciencedirect.com/journal/neural-networks) | NN | 二区TOP | 二区TOP | 6.3 | 856 | Elsevier | - |
-| 11 | [Applied Soft Computing](https://www.sciencedirect.com/journal/applied-soft-computing) | ASC | 二区TOP | 二区TOP | 6.6 | 1269 | Elsevier | - |
-| 12 | [Neurocomputing](https://www.sciencedirect.com/journal/neurocomputing) | Neurocomputing | 二区 | 二区TOP | 6.5 | 1629 | Elsevier | - |
-| 13 | [IEEE Transactions on Automation Science and Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856) | IEEE TASE | 二区 | 二区TOP | 6.4 | 840 | IEEE | - |
-| 14 | [IEEE Transactions on Human-Machine Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221038) | IEEE THMS | 二区 | 二区 | 4.4 | 78 | IEEE | - |
-| 15 | [IEEE Signal Processing Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=97) | IEEE SPL | 三区 | 三区 | 3.9 | 635 | IEEE | - |
-| 16 | [Applied Intelligence](https://www.springer.com/journal/10489) | AppI | 三区 | - | 3.5 | 635 | Springer | - |
+| 1 | [IEEE Transactions on Pattern Analysis and Machine Intelligence](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34) | IEEE TPAMI | 一区 | [20.4](https://www.bioxbio.com/journal/IEEE-T-PATTERN-ANAL) | [41.1](https://innovate.ieee.org/ieee-journals-continue-to-excel-in-citation-rankings/) | 732 | IEEE | - |
+| 2 | [Cyborg and Bionic Systems](https://spj.science.org/journal/cbsystems) | CBS | 一区 | [20.9](https://spj.science.org/journal/cbsystems) | [21.8](https://fis.tu-dresden.de/portal/en/journals/cyborg-and-bionic-systems%28512509a8-62c8-4a2e-8862-c7bdec7a23de%29.html) | 65 | AAAS | 中国科学院自动化研究所与美国科学促进会合作出版 |
+| 3 | [Information Fusion](https://www.sciencedirect.com/journal/information-fusion) | Inf. Fus. | 一区 | [17.4](https://www.bioxbio.com/journal/INFORM-FUSION) | [26.7](https://journalindexes.com/information-fusion-15662535/) | 554 | Elsevier | - |
+| 4 | [IEEE Transactions on Knowledge and Data Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69) | IEEE TKDE | 二区 | [11.6](https://www.bioxbio.com/journal/IEEE-T-KNOWL-DATA-EN) | [22.7](https://fis.tu-dresden.de/portal/en/journals/ieee-transactions-on-knowledge-and-data-engineering--tkde%28f056011d-90d7-4da8-a310-12bdd6c3d3ee%29.html) | 666 | IEEE | - |
+| 5 | [IEEE Transactions on Cybernetics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036) | IEEE TCYB | 一区 | [11.3](https://www.bioxbio.com/journal/IEEE-T-CYBERNETICS) | [28.2](https://journalindexes.com/ieee-transactions-on-cybernetics-21682267/) | 441 | IEEE | - |
+| 6 | [IEEE Transactions on Industrial Informatics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | IEEE TII | 一区 | [9.8](https://www.bioxbio.com/journal/IEEE-T-IND-INFORM) | [22.4](https://journalindexes.com/ieee-transactions-on-industrial-informatics-15513203/) | 1132 | IEEE | - |
+| 7 | [IEEE Transactions on Multimedia](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046) | IEEE TMM | 一区 | [9.9](https://www.bioxbio.com/journal/IEEE-T-MULTIMEDIA) | [15.7](https://fis.tu-dresden.de/portal/en/journals/ieee-transactions-on-multimedia%286a8cdc88-a5e4-4f33-bae6-1315498038fd%29.html) | 872 | IEEE | - |
+| 8 | [IEEE Transactions on Systems Man Cybernetics-Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221037) | IEEE TSMC | 一区 | [8.4](https://www.bioxbio.com/journal/IEEE-T-SYST-MAN-CY-S) | [17.8](https://journalindexes.com/ieee-transactions-on-systems-man-and-cybernetics-systems-21682216/) | 667 | IEEE | - |
+| 9 | [Pattern Recognition](https://www.sciencedirect.com/journal/pattern-recognition) | PR | 一区 | [9.1](https://www.bioxbio.com/journal/PATTERN-RECOGN) | [17.3](https://fis.tu-dresden.de/portal/en/journals/pattern-recognition--the-journal-of-the-pattern-recognition-society%2814e53020-b9b4-4769-b128-49c20eec2c4a%29.html) | 966 | Elsevier | - |
+| 10 | [Neural Networks](https://www.sciencedirect.com/journal/neural-networks) | NN | 二区 | [7.2](https://www.bioxbio.com/journal/NEURAL-NETWORKS) | [10.9](https://journalindexes.com/neural-networks-08936080/) | 856 | Elsevier | - |
+| 11 | [Applied Soft Computing](https://www.sciencedirect.com/journal/applied-soft-computing) | ASC | 二区 | [7.8](https://www.bioxbio.com/journal/APPL-SOFT-COMPUT) | [13.1](https://journalindexes.com/applied-soft-computing-15684946/) | 1269 | Elsevier | - |
+| 12 | [Neurocomputing](https://www.sciencedirect.com/journal/neurocomputing) | Neurocomputing | 二区 | [6.7](https://www.bioxbio.com/journal/NEUROCOMPUTING) | [10.8](https://fis.tu-dresden.de/portal/en/journals/neurocomputing%28942b261e-960b-4538-9be4-3184d9070778%29.html) | 1629 | Elsevier | - |
+| 13 | [IEEE Transactions on Automation Science and Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856) | IEEE TASE | 二区 | [7.9](https://www.bioxbio.com/journal/IEEE-T-AUTOM-SCI-ENG) | [10.3](https://journalindexes.com/ieee-transactions-on-automation-science-and-engineering-15455955/) | 840 | IEEE | - |
+| 14 | [IEEE Transactions on Human-Machine Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221038) | IEEE THMS | 二区 | [4.4](https://www.bioxbio.com/journal/IEEE-T-HUM-MACH-SYST) | [10.6](https://journalindexes.com/ieee-transactions-on-human-machine-systems-21682291/) | 78 | IEEE | - |
+| 15 | [IEEE Signal Processing Letters](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=97) | IEEE SPL | 三区 | [3.6](https://www.bioxbio.com/journal/IEEE-SIGNAL-PROC-LET) | [6.3](https://journalindexes.com/ieee-signal-processing-letters-10709908/) | 635 | IEEE | - |
+| 16 | [Applied Intelligence](https://www.springer.com/journal/10489) | AppI | 三区 | [3.5](https://www.bioxbio.com/journal/APPL-INTELL) | [9.1](https://letpub.com.cn/index.php?journalid=737&page=journalapp&view=detail) | 635 | Springer | - |
 
 #### 2.2.2 医学
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [Journal of NeuroEngineering and Rehabilitation](https://jneuroengrehab.biomedcentral.com/) | JNER | 一区TOP | 二区TOP | 5.2 | 225 | BioMed Central | - |
-| 2 | [Artificial Intelligence in Medicine](https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine) | AIM | 二区TOP | 二区TOP | 6.2 | 207 | Elsevier | - |
-| 3 | [Human Brain Mapping](https://onlinelibrary.wiley.com/journal/10970193) | HBM | 二区 | 二区TOP | 3.3 | 339 | Wiley-Liss | - |
-| 4 | [Journal of Biomedical Informatics](https://www.sciencedirect.com/journal/journal-of-biomedical-informatics) | JBI | 二区 | 二区 | 4.5 | 146 | Elsevier | - |
-| 5 | [IEEE Transactions on Biomedical Circuits and Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4156126) | IEEE TBCS | 二区 | 二区 | 4.9 | 102 | IEEE | - |
-| 6 | [Computer Methods and Programs in Biomedicine](https://www.sciencedirect.com/journal/computer-methods-and-programs-in-biomedicine) | CMPB | 二区 | 二区TOP | 4.8 | 440 | Elsevier | - |
-| 7 | [IEEE Transactions on Medical Robotics and Bionics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8263503) | IEEE TMRB | 三区 | 二区 | 3.8 | 156 | IEEE | - |
-| 8 | [Clinical Neurophysiology](https://www.sciencedirect.com/journal/clinical-neurophysiology) | - | 三区 | - | 3.6 | 234 | Elsevier | - |
-| 9 | [Frontiers in Neuroscience](https://www.frontiersin.org/journals/neuroscience) | Fron. Neur. | 三区 | - | 3.2 | 1118 | Frontiers | - |
-| 10 | [Cognitive Neurodynamics](https://www.springer.com/journal/11571) | CN | 四区 | 二区 | 3.9 | 126 | Springer | - |
+| 1 | [Journal of NeuroEngineering and Rehabilitation](https://jneuroengrehab.biomedcentral.com/) | JNER | 二区 | [6.0](https://www.bioxbio.com/journal/J-NEUROENG-REHABIL) | [8.6](https://journalindexes.com/journal-of-neuroengineering-and-rehabilitation-17430003/) | 225 | BioMed Central | - |
+| 2 | [Artificial Intelligence in Medicine](https://www.sciencedirect.com/journal/artificial-intelligence-in-medicine) | AIM | 二区 | [7.8](https://www.bioxbio.com/journal/ARTIF-INTELL-MED) | [15.0](https://letpub.com.cn/index.php?journalid=893&page=journalapp&view=detail&xuanxiangk_id=2) | 207 | Elsevier | - |
+| 3 | [Human Brain Mapping](https://onlinelibrary.wiley.com/journal/10970193) | HBM | 二区 | [4.0](https://www.bioxbio.com/journal/HUM-BRAIN-MAPP) | [8.2](https://fis.tu-dresden.de/portal/en/journals/human-brain-mapping%284cb511ae-ea84-40c0-893a-8e427434d69c%29.html) | 339 | Wiley-Liss | - |
+| 4 | [Journal of Biomedical Informatics](https://www.sciencedirect.com/journal/journal-of-biomedical-informatics) | JBI | 二区 | [5.9](https://www.bioxbio.com/journal/J-BIOMED-INFORM) | [10.8](https://journalindexes.com/journal-of-biomedical-informatics-15320464/) | 146 | Elsevier | - |
+| 5 | [IEEE Transactions on Biomedical Circuits and Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4156126) | IEEE TBCS | 二区 | [5.1](https://www.bioxbio.com/journal/IEEE-T-BIOMED-CIRC-S) | [10.6](https://fis.tu-dresden.de/portal/en/journals/ieee-transactions-on-biomedical-circuits-and-systems%286249a3f9-328a-4d53-9d63-53434e63f4c3%29.html) | 102 | IEEE | - |
+| 6 | [Computer Methods and Programs in Biomedicine](https://www.sciencedirect.com/journal/computer-methods-and-programs-in-biomedicine) | CMPB | 二区 | [6.4](https://www.bioxbio.com/journal/COMPUT-METH-PROG-BIO) | [11.9](https://fis.tu-dresden.de/portal/en/journals/computer-methods-and-programs-in-biomedicine--an-international-journal-devoted-to-the-development-implementation-and-exchange-of-computing-methodology-and-software-systems-in-biomedical-research-and-medical-practice%283200bb6c-bdfa-4996-9407-741e21183131%29.html) | 440 | Elsevier | - |
+| 7 | [IEEE Transactions on Medical Robotics and Bionics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8263503) | IEEE TMRB | 二区 | [4.3](https://www.ablesci.com/journal/detail?id=p3q7ND) | [6.7](https://journalindexes.com/ieee-transactions-on-medical-robotics-and-bionics-25763202/) | 156 | IEEE | - |
+| 8 | [Clinical Neurophysiology](https://www.sciencedirect.com/journal/clinical-neurophysiology) | - | 二区 | [3.4](https://www.bioxbio.com/journal/CLIN-NEUROPHYSIOL) | [6.3](https://journalindexes.com/clinical-neurophysiology-13882457/) | 234 | Elsevier | - |
+| 9 | [Frontiers in Neuroscience](https://www.frontiersin.org/journals/neuroscience) | Fron. Neur. | 三区 | [4.0](https://www.frontiersin.org/journals/neuroscience) | [7.4](https://www.frontiersin.org/journals/neuroscience) | 1118 | Frontiers | - |
+| 10 | [Cognitive Neurodynamics](https://www.springer.com/journal/11571) | CN | 二区 | [4.5](https://www.bioxbio.com/journal/COGN-NEURODYNAMICS) | [7.1](https://fis.tu-dresden.de/portal/en/journals/cognitive-neurodynamics%289fe701ba-4071-41c8-8f9b-6f25bb61ee6a%29.html) | 126 | Springer | - |
 
 #### 2.2.3 工程技术
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [IEEE Transactions on Signal Processing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78) | IEEE TSP | 二区TOP | 二区TOP | 5.8 | 375 | IEEE | - |
-| 2 | [Computers & Industrial Engineering](https://www.sciencedirect.com/journal/computers-and-industrial-engineering) | CIE | 二区TOP | 一区TOP | 6.5 | 812 | Elsevier | - |
+| 1 | [IEEE Transactions on Signal Processing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78) | IEEE TSP | 二区 | [5.5](https://www.bioxbio.com/journal/IEEE-T-SIGNAL-PROCES) | [11.7](https://journalindexes.com/ieee-transactions-on-signal-processing-1053587X/) | 375 | IEEE | - |
+| 2 | [Computers & Industrial Engineering](https://www.sciencedirect.com/journal/computers-and-industrial-engineering) | CIE | 一区 | [7.3](https://www.bioxbio.com/journal/COMPUT-IND-ENG) | [13.5](https://fis.tu-dresden.de/portal/en/journals/computers-and-industrial-engineering%2812685f83-32a4-4500-946b-d48854cf5d64%29.html) | 812 | Elsevier | - |
 
 #### 2.2.4 综合性期刊
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [Advanced Science](https://onlinelibrary.wiley.com/journal/21983844) | Adv. Sci. | 一区TOP | 一区TOP | 14.1 | 3290 | Wiley-VCH | - |
-| 2 | [Science Advances](https://www.science.org/journal/sciadv) | Sci. Adv. | 一区TOP | 一区TOP | 12.5 | 2263 |  AAAS | - |
-| 3 | [Scientific Data](https://www.nature.com/sdata/) | Sci. Dat. | 二区 | - | 6.9 | 1405 | Springer Nature | Open Access |
-| 4 | [Scientific Reports](https://www.nature.com/srep/) | Sci. Rep. | 三区 | - | 3.9 | 31052 | Springer Nature | Open Access |
-| 5 | [PLoS One](https://journals.plos.org/plosone/) | PLoS One | 三区 | - | 2.6 | 16608 | Public Library of Science | Open Access |
+| 1 | [Advanced Science](https://onlinelibrary.wiley.com/journal/21983844) | Adv. Sci. | 一区 | [14.1](https://advanced.onlinelibrary.wiley.com/journal/21983844) | [18.1](https://advanced.onlinelibrary.wiley.com/journal/21983844) | 3290 | Wiley-VCH | - |
+| 2 | [Science Advances](https://www.science.org/journal/sciadv) | Sci. Adv. | 一区 | [13.9](https://www.wolterskluwer.com/en/solutions/ovid/science-advances-15526) | [19.0](https://fis.tu-dresden.de/portal/en/journals/science-advances%28d3aea9a7-4044-46b3-a8ec-1eac64fafaff%29.html) | 2263 | AAAS | - |
+| 3 | [Scientific Data](https://www.nature.com/sdata/) | Sci. Dat. | 二区 | [7.2](https://www.nature.com/sdata/journal-impact) | [9.6](https://journalindexes.com/scientific-data-20524463/) | 1405 | Springer Nature | Open Access |
+| 4 | [Scientific Reports](https://www.nature.com/srep/) | Sci. Rep. | 三区 | [4.9](https://www.bioxbio.com/journal/SCI-REP-UK) | [6.4](https://www.mathnet.ru/php/journal.phtml?jrnid=sr&option_lang=eng) | 31052 | Springer Nature | Open Access |
+| 5 | [PLoS One](https://journals.plos.org/plosone/) | PLoS One | 三区 | [2.8](https://www.bioxbio.com/journal/PLOS-ONE) | [4.8](https://journalindexes.com/plos-one-19326203/) | 16608 | Public Library of Science | Open Access |
 
 #### 2.2.5 生物学
 
-| 序号 | 期刊名称 | 期刊简称 | 2025年中科院分区 | 2026年中科院分区 | 影响因子 | 年文章数 | 出版机构 | 备注 |
+| 序号 | 期刊名称 | 期刊简称 | 2026年新锐分区 | 影响因子（2025） | CiteScore（2025） | 年文章数 | 出版机构 | 备注 |
 |:---:|:---|:---|:---:|:---:|:---:|:---:|:---|:---|
-| 1 | [IEEE-ACM Transactions on Computational Biology and Bioinformatics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8857) | IEEE TCBB | 三区 | - | 3.4 | 228 | IEEE | - |
+| 1 | [IEEE-ACM Transactions on Computational Biology and Bioinformatics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8857) | IEEE TCBB | 三区 | [4.1](https://www.bioxbio.com/journal/IEEE-ACM-T-COMPUT-BI) | [9.7](https://journalindexes.com/ieee-transactions-on-computational-biology-and-bioinformatics-29984165/) | 228 | IEEE | 现刊名为IEEE Transactions on Computational Biology and Bioinformatics；CiteScore按现刊名查询 |
 
 
 ---
