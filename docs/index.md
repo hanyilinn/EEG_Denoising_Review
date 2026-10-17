@@ -338,7 +338,8 @@ title: EEG Research Review
 | 3 | [IEEE Transactions on Instrumentation and Measurement](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19) ★ | IEEE TIM | 二区 | [7.0](https://www.bioxbio.com/journal/IEEE-T-INSTRUM-MEAS) | [9.8](https://fis.tu-dresden.de/portal/de/journals/ieee-transactions-on-instrumentation-and-measurement%289068506e-490f-4808-8819-c257fd814fde%29.html) | 2532 | IEEE | - |
 | 4 | [IEEE Transactions on Signal Processing](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=78) | IEEE TSP | 二区 | [5.5](https://www.bioxbio.com/journal/IEEE-T-SIGNAL-PROCES) | [11.7](https://journalindexes.com/ieee-transactions-on-signal-processing-1053587X/) | 375 | IEEE | - |
 | 5 | [Technologies](https://www.mdpi.com/journal/technologies) ★ | \ | 三区 | [5.2](https://www.mdpi.com/journal/technologies/history) | [6.7](https://journalindexes.com/technologies-22277080/) | 262 | MDPI | - |
-| 6 | [Cogent Engineering](https://www.tandfonline.com/journals/oaen20) ★ | \ | 三区 | [2.7](https://www.tandfonline.com/action/journalInformation?journalCode=oaen20) | [6.9](https://journalindexes.com/cogent-engineering-23311916/) | 356 | Taylor & Francis | - |
+| 6 | [IEEE Sensors Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361) ★ | IEEE SJ | 二区 | [4.5](https://www.bioxbio.com/journal/IEEE-SENS-J) | [7.8](https://fis.tu-dresden.de/portal/en/journals/ieee-sensors-journal%28c28b1ba9-dc24-4e05-9546-737744c349a4%29.html) | 3965 | IEEE | - |
+| 7 | [Cogent Engineering](https://www.tandfonline.com/journals/oaen20) ★ | \ | 三区 | [2.7](https://www.tandfonline.com/action/journalInformation?journalCode=oaen20) | [6.9](https://journalindexes.com/cogent-engineering-23311916/) | 356 | Taylor & Francis | - |
 
 #### 2.1.4 综合性期刊
 
@@ -348,9 +349,8 @@ title: EEG Research Review
 | 2 | [Science Advances](https://www.science.org/journal/sciadv) | Sci. Adv. | 一区 | [13.9](https://www.wolterskluwer.com/en/solutions/ovid/science-advances-15526) | [19.0](https://fis.tu-dresden.de/portal/en/journals/science-advances%28d3aea9a7-4044-46b3-a8ec-1eac64fafaff%29.html) | 2263 | AAAS | - |
 | 3 | [Scientific Data](https://www.nature.com/sdata/) | Sci. Dat. | 二区 | [7.2](https://www.nature.com/sdata/journal-impact) | [9.6](https://journalindexes.com/scientific-data-20524463/) | 1405 | Springer Nature | Open Access |
 | 4 | [Scientific Reports](https://www.nature.com/srep/) ★ | Sci. Rep. | 三区 | [4.9](https://www.bioxbio.com/journal/SCI-REP-UK) | [6.4](https://www.mathnet.ru/php/journal.phtml?jrnid=sr&option_lang=eng) | 31052 | Springer Nature | Open Access |
-| 5 | [IEEE Sensors Journal](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7361) ★ | IEEE SJ | 二区 | [4.5](https://www.bioxbio.com/journal/IEEE-SENS-J) | [7.8](https://fis.tu-dresden.de/portal/en/journals/ieee-sensors-journal%28c28b1ba9-dc24-4e05-9546-737744c349a4%29.html) | 3965 | IEEE | - |
-| 6 | [Sensors](https://www.mdpi.com/journal/sensors) ★ | Sen. | 三区 | [4.0](https://www.bioxbio.com/journal/SENSORS-BASEL) | [9.4](https://www.mdpi.com/journal/sensors/history) | 8165 | MDPI | - |
-| 7 | [PLoS One](https://journals.plos.org/plosone/) | PLoS One | 三区 | [2.8](https://www.bioxbio.com/journal/PLOS-ONE) | [4.8](https://journalindexes.com/plos-one-19326203/) | 16608 | Public Library of Science | Open Access |
+| 5 | [Sensors](https://www.mdpi.com/journal/sensors) ★ | Sen. | 三区 | [4.0](https://www.bioxbio.com/journal/SENSORS-BASEL) | [9.4](https://www.mdpi.com/journal/sensors/history) | 8165 | MDPI | - |
+| 6 | [PLoS One](https://journals.plos.org/plosone/) | PLoS One | 三区 | [2.8](https://www.bioxbio.com/journal/PLOS-ONE) | [4.8](https://journalindexes.com/plos-one-19326203/) | 16608 | Public Library of Science | Open Access |
 
 #### 2.1.5 生物学
 
