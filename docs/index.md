@@ -153,7 +153,7 @@ title: EEG Research Review
 
 ### 1.3 EEG去噪相关综述 (EEG Denoising Reviews)
 
-> 共收录 **8** 条综述
+> 共收录 **9** 条综述
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -165,6 +165,7 @@ title: EEG Research Review
 | 6 | 综述 | 2020 | EEG信号伪迹去除方法综述 | [Methods for removal of artifacts from EEG signal: A review](https://iopscience.iop.org/article/10.1088/1742-6596/1706/1/012093/meta) | Journal of Physics: Conference Series | - | Koneru Lakshmaiah Education Foundation | - |
 | 7 | 综述 | 2026 | - | [Physiological artifacts removal in EEG signals: a comprehensive overview of conventional to deep learning methods to support brain health monitoring](https://www.mdpi.com/2227-7080/13/12/578) | Cogent Engineering | - | Manipal Academy of Higher Education | 综述文章 |
 | 8 | 综述 | 2026 | 深度学习EEG去噪综述；以端到端去噪管线为框架，梳理数据/目标构造、输入表示、网络架构、目标函数和评估策略，并讨论选择性去噪、多任务去噪、下游验证与部署问题 | [Deep-learning based electroencephalogram denoising: A literature review](https://iopscience.iop.org/article/10.1088/1741-2552/ae89e6) | Journal of Neural Engineering | - | University of Science and Technology of China + The University of British Columbia | PMID: 42443114；DOI: 10.1088/1741-2552/ae89e6 |
+| 9 | 单通道去噪范围综述 | 2026 | 系统梳理178篇文章的199种单通道兼容伪迹去除方法变体，按方法机制、伪迹覆盖、评测设计、泛化、部署和可复现性组织证据；区分信号重建、脑信号保留与下游任务效用 | [Single-channel EEG denoising and artifact removal: A systematic scoping review of methods, benchmarking, and reproducibility](https://doi.org/10.1088/1741-2552/aeb0ce) | Journal of Neural Engineering | 未确认配套代码 | Auckland University of Technology + New Zealand College of Chiropractic | Shaikh、Kalra、Lowe、Khan；2026-10-06；检索截至2026-08-15；303项学习方法评测中仅31项明确隔离测试片段、干净源和伪迹源，199种方法变体中仅3种评价干净输入的下游不退化；适合作为任务导向去噪benchmark设计参考；PMID: 42838079 |
 
 ---
 
