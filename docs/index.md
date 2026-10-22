@@ -33,7 +33,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **76** 条记录（截至2026年）
+> 共收录 **77** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -43,7 +43,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 17 |
+| 2026 | 18 |
 
 #### 1.1.2 方法详情
 
@@ -125,6 +125,7 @@ title: EEG Research Review
 | 74 | EEG-CPDD | 2026 | 协方差保持的条件扩散EEG去噪框架，面向EEG源定位前处理；针对MSE驱动去噪容易过平滑、破坏空间协方差的问题，通过概率式信号重建和噪声信息引导来保持源定位所需的协方差结构... | [EEG-CPDD: A Covariance-Preserving Diffusion Denoiser for Reliable EEG Source Localization](https://ieeexplore.ieee.org/document/11683990) | IEEE JBHI | - | Guangdong University of Technology + Chongqing University of Posts and Telecommunications | IEEE Fellow 李远清老师组论文；噪声预测网络 RLinDenoiseNet 结合 RLinFormer 低秩注意力、FFiLM 频域噪声水平注入和 SEFuse 双流通道注意力融合；摘要报告在多个benchmark上提升去噪效果、保持空间协方差，并在多种源定位算法中降低偶极定位误差、提升能量重建和参数鲁棒性；DOI: 10.1109/JBHI.2026.3732549 |
 | 75 | Diff-ADN | 2026 | 两阶段单通道去噪框架：先按伪迹严重度进行初步重建，再用扩散训练得到的残差编码器执行一次确定性修正，推理时无需迭代反向扩散；覆盖EOG、EMG、ECG及混合伪迹... | [Diff-ADN: A diffusion-guided artifact denoising network with deterministic residual refinement for EEG](https://pubmed.ncbi.nlm.nih.gov/42772331/) | Journal of Neural Engineering | - | Northwestern Polytechnical University | 在4个公开运动想象数据集上检验去噪后的解码恢复；ECG去噪通常恢复4.88–5.59个百分点，BCI IV-2a在-6 dB PTB-ECG污染下最高恢复21.90个百分点；同时指出波形重建指标改善不一定对应BCI准确率的等比例恢复；DOI: 10.1088/1741-2552/aeab36 |
 | 76 | EEG-WNet | 2026 | 轻量级小波引导双分支网络：联合时域建模与小波先验学习，并通过跨注意力融合、残差引导细化和多尺度通道—空间注意力提升眼电伪迹重建质量与推理效率 | [EEG-WNet: A wavelet-guided dual-branch network for ocular artifact suppression in electroencephalogram](https://www.sciencedirect.com/science/article/pii/S1746809426021117) | Biomedical Signal Processing and Control | - | Tongji University | 以半合成EOG污染为主，并补充EMG和合成噪声实验；在EEGdenoiseNet上报告RRMSE_t=0.212、SNR=15.42 dB、CC=0.967，另在DEAP真实记录上做定性迁移；8.48M参数、CPU推理1.34 ms；在线发表于2026年，编入2027年卷；DOI: 10.1016/j.bspc.2026.111553 |
+| 77 | gated-MDS-rarWGAN | 2026 | 单通道眼电去噪：WGAN联合重构损失、多尺度卷积和时频双域特征提取；复用判别器分数作门控，仅对判为污染的片段去噪，其他片段保留原样 | [EOG Artifact Removal from EEG Using a Gated WGAN with Multi-Scale and Multi-Domain Feature Extraction](https://www.mdpi.com/2076-3425/16/10/1124) | Brain Sciences | 未确认 | Northwestern Polytechnical University（西北工业大学） | 2026-10-17发表；EEGdenoiseNet上RRMSE_t=0.189、RRMSE_f=0.183、CC=0.955；BCI Competition IV 2a上结合EEGNet验证运动想象分类，真实数据重构参考来自ICA而非真实干净EEG；离线方法；DOI: 10.3390/brainsci16101124 |
 
 ---
 
