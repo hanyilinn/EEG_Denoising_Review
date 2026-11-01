@@ -195,7 +195,7 @@ title: EEG Research Review
 
 #### 1.5.1 核心基础模型论文
 
-> 共收录 **21** 条记录
+> 共收录 **22** 条记录
 
 涵盖通用EEG表征、生成式信号恢复及包含EEG的多模态睡眠模型。SleepFM两篇不是纯EEG模型；ZUNA两篇侧重信号恢复，不应只用分类准确率与表征模型横向比较。表格按“发表时间”列升序排列，预印本与正式版本的关系在备注中说明。
 
@@ -222,6 +222,7 @@ title: EEG Research Review
 | 19 | MORGOTH | 2026 | 将神经tokenizer、EEG Transformer与专门任务头结合，在统一架构中同时进行事件级检测和整段临床EEG解读，覆盖癫痫、棘波、慢波、爆发抑制及睡眠分期 | [Toward unified and comprehensive automated electroencephalogram interpretation: a multicentre development and validation of an electroencephalogram foundation model](https://doi.org/10.1016/j.landig.2026.101039) | The Lancet Digital Health | [代码公开](https://github.com/bdsp-core/morgoth) | Harvard Medical School / affiliated hospitals + international multicentre collaborators | 在四家医院开发，在48家机构的1573名患者上外部验证，比较模型—专家与专家—专家一致性；[数据与预训练权重](https://www.bdsp.io/content/morgoth1/1.0.0/)需要资质认证和签署DUA，不等同于无条件开放下载 |
 | 20 | ZUNA | 2026 | 位置感知扩散自编码EEG基础模型，利用电极坐标适配不同通道布局，通过生成式信号恢复完成超分辨率、缺失通道补全与去噪 | [ZUNA: Flexible EEG Superresolution with Position-Aware Diffusion Autoencoders](https://arxiv.org/abs/2602.18478) | Arxiv | [项目代码](https://github.com/Zyphra/zuna) | Zyphra | 原版论文，与ZUNA1.1分别收录；侧重信号恢复而非仅分类表征，评价时应同时考虑重建保真、脑信号保持与下游效用 |
 | 21 | ZUNA1.1 | 2026 | 在ZUNA基础上扩展变长EEG与任意时间—通道缺失模式的重建，支持最长30秒信号及灵活电极布局，用于去噪、通道补全和超分辨率 | [ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution](https://arxiv.org/abs/2607.27308) | Arxiv | [是](https://huggingface.co/Zyphra/ZUNA1.1) | Zyphra | 与原版ZUNA独立成条；同一论文已在深度学习EEG去噪方法表收录，此处从基础模型角度归档，不计作新增发现 |
+| 22 | EEG-PRIME | 2026 | 两阶段EEG基础模型：先进行带频谱增强的掩码重建预训练，再用任务语义、数据集嵌入和被试不变约束调制Q-Former，将EEG表征与文本类别原型匹配，实现跨数据集多任务解码 | [EEG-PRIME: Prototype-Aligned Representation Learning with Multi-Level Conditioning for EEG Decoding](https://arxiv.org/abs/2608.13072) | Arxiv | 未确认 | Nanyang Technological University + Southeast University | 2026-08-13预印本；在运动想象、情绪、ADHD、隐性语音及认知负荷等16个数据集上评估，并在额外2个留出数据集上测试零样本迁移；零样本结果主要支持运动想象，不能外推为所有任务均有效；论文提供的代码入口核验时返回404，代码与权重公开状态待确认 |
 
 #### 1.5.2 基础模型评测与适配研究
 
@@ -240,7 +241,7 @@ title: EEG Research Review
 
 ### 1.6 EEG Agent相关研究 (EEG Agent Related Studies)
 
-> 共收录 **6** 条记录
+> 共收录 **7** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -250,6 +251,7 @@ title: EEG Research Review
 | 4 | CogEEGAgent | 2026 | 面向认知EEG分析的可审计智能体，基于MNE-Python，将LLM意图理解与确定性科学执行分离，并通过typed contracts、confirmation access控制和selection-aware verification降低自适应搜索带来的假阳性风险... | [CogEEGAgent: Toward Autonomous Cognitive EEG Analysis with Grounded Execution and Selection-Aware Verification](https://arxiv.org/abs/2607.25045) | Arxiv | [是](https://github.com/dengzhe-hou/CogEEGAgent) | Tohoku University | 更偏认知EEG统计分析自动化；对未来构建可审计EEG benchmark agent有参考价值 |
 | 5 | AutoBCI | 2026 | 面向跨任务EEG解码网络设计的双智能体框架：Designer Agent基于多轮实验反馈生成和改进网络结构，Forecaster Agent结合模型代码、训练协议和早期学习曲线预测完整训练性能并筛选候选模型... | [AutoBCI: Forecast-Guided Agentic Neural Architecture Discovery for EEG-Based Brain-Computer Interfaces](https://arxiv.org/abs/2609.35456) | Arxiv | - | Nanyang Technological University + The University of Hong Kong + Southeast University | 在运动想象、情绪识别和睡眠分期共14个数据集上评估6种LLM；最佳自动发现架构平均balanced accuracy为64.16%，略高于REVE的63.87%；PEEK将早期性能预测MAE由2.20降至1.36个百分点，并估计减少44.9%的训练epoch |
 | 6 | autoSCORE | 2026 | 将卷积神经网络SCORE-AI集成进商用EEG阅读器，把长时EEG自动切分为2小时片段，判断正常/异常并识别4类异常模式，同时给出按概率排序的时间标记供临床专家快速复核和修正 | [Clinical validation of autoSCORE: A human-in-the-loop AI tool for interpretation of long-term EEG recordings](https://www.sciencedirect.com/science/article/pii/S1388245726009302) | Clinical Neurophysiology | - | International multicenter clinical EEG consortium | 使用40段住院和40段动态长时EEG（年龄0.9–82.3岁），以3名专家独立判读形成参考标准；AI与专家总体准确率相当，局灶性非癫痫异常检测更优；每类只复核概率最高的10个标记即可用完整片段1.5%–5.5%的内容纠正所有异常片段。它不是LLM agent，但属于高价值的人机协同EEG智能工具；DOI: 10.1016/j.clinph.2026.2112430 |
+| 7 | EEG-SpikeAgent | 2026 | LLM在闭环中生成并修改确定性的信号处理特征代码，执行后由XGBoost评估，再以结构化诊断反馈指导下一轮搜索；结合棘波形态、空间关系和伪迹特征，使自动特征工程可追溯、可消融 | [EEG-SpikeAgent: Agentic Closed-Loop Program Synthesis for Automated EEG Spike Detection](https://arxiv.org/abs/2607.04558) | Arxiv | 未确认 | Massachusetts Institute of Technology + UC Berkeley + Stanford University + UC San Francisco | 2026-07-06预印本；在VEPISET的29通道、4秒片段上进行五折评估，AUROC为0.935、balanced accuracy为0.699；默认阈值敏感度仅0.401，加入伪迹特征改善检测；属于棘波检测智能体而非去噪模型，尚未验证连续记录筛查或跨中心泛化，不能视为临床就绪系统 |
 
 ---
 
