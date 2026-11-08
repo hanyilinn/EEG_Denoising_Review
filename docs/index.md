@@ -33,7 +33,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **77** 条记录（截至2026年）
+> 共收录 **78** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -43,7 +43,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 18 |
+| 2026 | 19 |
 
 #### 1.1.2 方法详情
 
@@ -126,6 +126,7 @@ title: EEG Research Review
 | 75 | Diff-ADN | 2026 | 两阶段单通道去噪框架：先按伪迹严重度进行初步重建，再用扩散训练得到的残差编码器执行一次确定性修正，推理时无需迭代反向扩散；覆盖EOG、EMG、ECG及混合伪迹... | [Diff-ADN: A diffusion-guided artifact denoising network with deterministic residual refinement for EEG](https://pubmed.ncbi.nlm.nih.gov/42772331/) | Journal of Neural Engineering | - | Northwestern Polytechnical University | 在4个公开运动想象数据集上检验去噪后的解码恢复；ECG去噪通常恢复4.88–5.59个百分点，BCI IV-2a在-6 dB PTB-ECG污染下最高恢复21.90个百分点；同时指出波形重建指标改善不一定对应BCI准确率的等比例恢复；DOI: 10.1088/1741-2552/aeab36 |
 | 76 | EEG-WNet | 2026 | 轻量级小波引导双分支网络：联合时域建模与小波先验学习，并通过跨注意力融合、残差引导细化和多尺度通道—空间注意力提升眼电伪迹重建质量与推理效率 | [EEG-WNet: A wavelet-guided dual-branch network for ocular artifact suppression in electroencephalogram](https://www.sciencedirect.com/science/article/pii/S1746809426021117) | Biomedical Signal Processing and Control | - | Tongji University | 以半合成EOG污染为主，并补充EMG和合成噪声实验；在EEGdenoiseNet上报告RRMSE_t=0.212、SNR=15.42 dB、CC=0.967，另在DEAP真实记录上做定性迁移；8.48M参数、CPU推理1.34 ms；在线发表于2026年，编入2027年卷；DOI: 10.1016/j.bspc.2026.111553 |
 | 77 | gated-MDS-rarWGAN | 2026 | 单通道眼电去噪：WGAN联合重构损失、多尺度卷积和时频双域特征提取；复用判别器分数作门控，仅对判为污染的片段去噪，其他片段保留原样 | [EOG Artifact Removal from EEG Using a Gated WGAN with Multi-Scale and Multi-Domain Feature Extraction](https://www.mdpi.com/2076-3425/16/10/1124) | Brain Sciences | 未确认 | Northwestern Polytechnical University（西北工业大学） | 2026-10-17发表；EEGdenoiseNet上RRMSE_t=0.189、RRMSE_f=0.183、CC=0.955；BCI Competition IV 2a上结合EEGNet验证运动想象分类，真实数据重构参考来自ICA而非真实干净EEG；离线方法；DOI: 10.3390/brainsci16101124 |
+| 78 | DenoFlow | 2026 | 用直线流匹配学习从含伪迹SSVEP到参考信号的速度场，从含噪观测出发积分重建，并用分类监督保留刺激相关信息 | [DenoFlow: Flow matching for SSVEP denoising under recorded physiological artifacts](https://doi.org/10.1016/j.knosys.2026.117288) | Knowledge-Based Systems | [代码](https://github.com/wzwvv/DenoFlow) | Huazhong University of Science and Technology | 将EEGdenoiseNet中实录的EMG/EOG按指定信噪比叠加到SSVEP试次构造配对样本；在Nakanishi2015和SSVEP Benchmark上同时评估重建与解码。2026年接收，编入2027年1月第355卷，文章号117288；[预印本](https://arxiv.org/abs/2610.08817) |
 
 ---
 
@@ -171,7 +172,7 @@ title: EEG Research Review
 
 ### 1.4 EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **13** 条记录
+> 共收录 **14** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -188,6 +189,7 @@ title: EEG Research Review
 | 11 | AutocleanEEG-ICVision | 2026 | 在EEG Autoclean平台中加入基于视觉语言模型的ICA伪迹分类agent，将ICA dashboard的地形图、频谱、时间序列等可视化作为输入，自动输出脑源/眼动/肌肉/心电/通道噪声等类别、置信度和可解释理由，用于半自动artifact rejection和人工复核 | [AutocleanEEG - ICVision: Automated ICA Artifact Classification Using Vision-Language AI](https://ieeexplore.ieee.org/document/11539774) | ICMI 2026 | 是 | Cincinnati Children’s Hospital / University of Cincinnati | 面向AI-assisted EEG preprocessing与XAI；关键词包括AI-agent、Vision-language AI、ICA component、artifact rejection和BCI；适合作为智能体/多模态AI辅助EEG去噪工具方向补充 |
 | 12 | MTGNet | 2026 | 先用EEGDenoiseNet学习通用去噪先验，再通过TACR-LoRA在MDD和疲劳分类任务中只依赖任务标签适配，目标是“去噪后下游分类仍有用”而不是单纯压低重构误差 | [MTGNet: A task-oriented and spectrally guided framework for EEG denoising](https://iopscience.iop.org/article/10.1088/1741-2552/ae9ef1) | JNE | - | Tianjin University + Tiangong University | 使用ShallowNet、TCNet、EEGNet做跨分类器验证，并做Dataset II/III跨数据集迁移；结果表明MTGNet不是只服务某一个分类器，但作者也承认真实任务只验证了MDD和疲劳，泛化到MI、睡眠、情绪、癫痫等还需进一步验证 |
 | 13 | SQI-GEDAI Benchmark | 2026 | 在统一无伪迹处理基线下系统比较9种自动EEG伪迹处理方法，并提出SQI引导的GEDAI，仅修正信号质量较差的通道—时间段，以减少对原始EEG的不必要改动... | [Automated Artifact Removal in EEG Age Prediction: A systematic comparison](https://arxiv.org/abs/2609.31195) | Arxiv | - | Yneuro + collaborating institutions | 在TUEG训练脑龄模型，并零目标域拟合地测试ds005385、LEMON和TDBRAIN；只有GEDAI与SQI-GEDAI在3种深度网络上稳定改善MAE和R²，其余方法平均无益或有害；SQI门控将中位修改比例由74.78%降至42.80%，说明伪迹处理必须用目标下游任务验证 |
+| 14 | DenoFlow | 2026 | 在流匹配去噪中加入SSVEP类别监督，让重建后的信号保留可解码的刺激信息，而非只优化波形误差 | [DenoFlow: Flow matching for SSVEP denoising under recorded physiological artifacts](https://doi.org/10.1016/j.knosys.2026.117288) | Knowledge-Based Systems | [代码](https://github.com/wzwvv/DenoFlow) | Huazhong University of Science and Technology | 在Nakanishi2015和SSVEP Benchmark上，用5种解码器与7种去噪基线比较，作者报告信号保真度与解码准确率均有改善；伪迹来自实录，但污染是受控叠加的，不等同于自然污染验证。2026年接收，编入2027年1月第355卷 |
 
 ---
 
@@ -226,7 +228,7 @@ title: EEG Research Review
 
 #### 1.5.2 基础模型评测与适配研究
 
-> 共收录 **6** 条记录
+> 共收录 **7** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -236,6 +238,7 @@ title: EEG Research Review
 | 4 | Identity Trap / FMScope | 2026 | 提出FMScope冻结表征诊断协议，从方差分解、subject-axis erasure、aperiodic 1/f消融、层级label probing等角度检查EEG基础模型是否学到受试者身份捷径... | [The Identity Trap in EEG Foundation Models: A Diagnostic Audit](https://arxiv.org/abs/2606.06647) | Arxiv | - | UC San Diego | 对跨被试、临床分类和预处理benchmark尤其重要，避免把身份信息误认为疾病/任务信息 |
 | 5 | Representation Audit | 2026 | 用layer-wise probing、LEACE式子空间擦除和透明分类器分析CSBrain、CBraMod、LaBraM学到了什么、用了什么，以及可被传统EEG特征解释多少... | [What Do EEG Foundation Models Capture from Human Brain Signals?](https://arxiv.org/abs/2605.11410) | Arxiv | - | - | 解释性和可信性导向，适合与基础模型性能表配套阅读 |
 | 6 | ST-EEGFormer / Worth It Benchmark | 2026 | 在六种评估协议下系统比较EEG基础模型、紧凑神经网络与传统非神经解码器；同时提出在超过800万EEG片段上以掩码自编码预训练的ViT基线ST-EEGFormer | [Are EEG Foundation Models Worth It? Comparative Evaluation with Traditional Decoders in Diverse BCI Tasks](https://proceedings.iclr.cc/paper_files/paper/2026/hash/f0f39b7686634fc81ca0112566b2c05f-Abstract-Conference.html) | ICLR 2026 | [代码与模型](https://github.com/LiuyinYang1101/STEEGFormer) | KU Leuven + Shanghai Advanced Research Institute, Chinese Academy of Sciences | 模型名并非论文标题；数据充足时微调基础模型更有优势，少样本时未必胜过紧凑网络或经典解码器，线性探针收益也不稳定；适合作为公平benchmark和预训练收益边界的依据 |
+| 7 | EEG-HealthLLM | 2026 | 用任务专用EEG适配器保留各任务的时空特征，在语言模型侧共享LoRA，统一处理不同信号配置下的EEG健康评估任务 | [EEG-HealthLLM: Hierarchical Adaptation of Large Language Models for Unified Heterogeneous EEG Health Assessment](https://arxiv.org/abs/2611.01652) | Arxiv | [代码与划分](https://github.com/Marui-88/EEG-HealthLLM) | Lanzhou University + Shenzhen University + Sun Yat-sen University + Hefei University of Technology + Huawei + National University of Singapore | 2026-11-01预印本；EEG-HealthBench整合5项现有数据资源，以独立被试划分评估癫痫发作、重度抑郁、焦虑风险、抑郁症状风险及情绪状态。较各任务独立LoRA，平均平衡准确率从67.70%升至69.58%，语言侧适配器总规模减少80% |
 
 ---
 
