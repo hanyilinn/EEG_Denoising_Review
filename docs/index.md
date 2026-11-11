@@ -33,7 +33,7 @@ title: EEG Research Review
 
 #### 1.1.1 时间线总览
 
-> 共收录 **78** 条记录（截至2026年）
+> 共收录 **79** 条记录（截至2026年）
 
 | 年份 | 方法数量 |
 |:---:|:---:|
@@ -43,7 +43,7 @@ title: EEG Research Review
 | 2023 | 6 |
 | 2024 | 14 |
 | 2025 | 26 |
-| 2026 | 19 |
+| 2026 | 20 |
 
 #### 1.1.2 方法详情
 
@@ -127,6 +127,7 @@ title: EEG Research Review
 | 76 | EEG-WNet | 2026 | 轻量级小波引导双分支网络：联合时域建模与小波先验学习，并通过跨注意力融合、残差引导细化和多尺度通道—空间注意力提升眼电伪迹重建质量与推理效率 | [EEG-WNet: A wavelet-guided dual-branch network for ocular artifact suppression in electroencephalogram](https://www.sciencedirect.com/science/article/pii/S1746809426021117) | Biomedical Signal Processing and Control | - | Tongji University | 以半合成EOG污染为主，并补充EMG和合成噪声实验；在EEGdenoiseNet上报告RRMSE_t=0.212、SNR=15.42 dB、CC=0.967，另在DEAP真实记录上做定性迁移；8.48M参数、CPU推理1.34 ms；在线发表于2026年，编入2027年卷；DOI: 10.1016/j.bspc.2026.111553 |
 | 77 | gated-MDS-rarWGAN | 2026 | 单通道眼电去噪：WGAN联合重构损失、多尺度卷积和时频双域特征提取；复用判别器分数作门控，仅对判为污染的片段去噪，其他片段保留原样 | [EOG Artifact Removal from EEG Using a Gated WGAN with Multi-Scale and Multi-Domain Feature Extraction](https://www.mdpi.com/2076-3425/16/10/1124) | Brain Sciences | 未确认 | Northwestern Polytechnical University（西北工业大学） | 2026-10-17发表；EEGdenoiseNet上RRMSE_t=0.189、RRMSE_f=0.183、CC=0.955；BCI Competition IV 2a上结合EEGNet验证运动想象分类，真实数据重构参考来自ICA而非真实干净EEG；离线方法；DOI: 10.3390/brainsci16101124 |
 | 78 | DenoFlow | 2026 | 用直线流匹配学习从含伪迹SSVEP到参考信号的速度场，从含噪观测出发积分重建，并用分类监督保留刺激相关信息 | [DenoFlow: Flow matching for SSVEP denoising under recorded physiological artifacts](https://doi.org/10.1016/j.knosys.2026.117288) | Knowledge-Based Systems | [代码](https://github.com/wzwvv/DenoFlow) | Huazhong University of Science and Technology | 将EEGdenoiseNet中实录的EMG/EOG按指定信噪比叠加到SSVEP试次构造配对样本；在Nakanishi2015和SSVEP Benchmark上同时评估重建与解码。2026年接收，编入2027年1月第355卷，文章号117288；[预印本](https://arxiv.org/abs/2610.08817) |
+| 79 | AREMamba | 2026 | 面向统一EEG去噪与情感计算的伪迹鲁棒Emotion Mamba框架；当前仅依据题名与书目信息概括研究方向 | [AREMamba: Artifact-Robust Emotion Mamba for Unified EEG Denoising and Affective Computing](https://doi.org/10.1145/3767308.3836370) | ACM Multimedia 2026 | [同名仓库](https://github.com/PaperCode-ARE/AREMamba)（仅README，未见实现代码） | Beijing University of Technology + Anhui University | Wenjia Dong、Zhijian Gong、Xueyuan Xu、Fulin Wei、Li Zhuo；pp. 1644–1653。完整摘要/全文尚未核实，具体结构、数据集与实验结果待补充；亦见“去噪结合下游任务”板块 |
 
 ---
 
@@ -172,7 +173,7 @@ title: EEG Research Review
 
 ### 1.4 EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **14** 条记录
+> 共收录 **15** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -190,6 +191,7 @@ title: EEG Research Review
 | 12 | MTGNet | 2026 | 先用EEGDenoiseNet学习通用去噪先验，再通过TACR-LoRA在MDD和疲劳分类任务中只依赖任务标签适配，目标是“去噪后下游分类仍有用”而不是单纯压低重构误差 | [MTGNet: A task-oriented and spectrally guided framework for EEG denoising](https://iopscience.iop.org/article/10.1088/1741-2552/ae9ef1) | JNE | - | Tianjin University + Tiangong University | 使用ShallowNet、TCNet、EEGNet做跨分类器验证，并做Dataset II/III跨数据集迁移；结果表明MTGNet不是只服务某一个分类器，但作者也承认真实任务只验证了MDD和疲劳，泛化到MI、睡眠、情绪、癫痫等还需进一步验证 |
 | 13 | SQI-GEDAI Benchmark | 2026 | 在统一无伪迹处理基线下系统比较9种自动EEG伪迹处理方法，并提出SQI引导的GEDAI，仅修正信号质量较差的通道—时间段，以减少对原始EEG的不必要改动... | [Automated Artifact Removal in EEG Age Prediction: A systematic comparison](https://arxiv.org/abs/2609.31195) | Arxiv | - | Yneuro + collaborating institutions | 在TUEG训练脑龄模型，并零目标域拟合地测试ds005385、LEMON和TDBRAIN；只有GEDAI与SQI-GEDAI在3种深度网络上稳定改善MAE和R²，其余方法平均无益或有害；SQI门控将中位修改比例由74.78%降至42.80%，说明伪迹处理必须用目标下游任务验证 |
 | 14 | DenoFlow | 2026 | 在流匹配去噪中加入SSVEP类别监督，让重建后的信号保留可解码的刺激信息，而非只优化波形误差 | [DenoFlow: Flow matching for SSVEP denoising under recorded physiological artifacts](https://doi.org/10.1016/j.knosys.2026.117288) | Knowledge-Based Systems | [代码](https://github.com/wzwvv/DenoFlow) | Huazhong University of Science and Technology | 在Nakanishi2015和SSVEP Benchmark上，用5种解码器与7种去噪基线比较，作者报告信号保真度与解码准确率均有改善；伪迹来自实录，但污染是受控叠加的，不等同于自然污染验证。2026年接收，编入2027年1月第355卷 |
+| 15 | AREMamba | 2026 | 研究EEG伪迹抑制与情感计算的统一建模，归入面向情绪识别的去噪研究；当前仅依据题名与书目信息概括研究方向 | [AREMamba: Artifact-Robust Emotion Mamba for Unified EEG Denoising and Affective Computing](https://doi.org/10.1145/3767308.3836370) | ACM Multimedia 2026 | [同名仓库](https://github.com/PaperCode-ARE/AREMamba)（仅README，未见实现代码） | Beijing University of Technology + Anhui University | Wenjia Dong、Zhijian Gong、Xueyuan Xu、Fulin Wei、Li Zhuo；pp. 1644–1653。关注去噪与下游情绪识别的联系；完整摘要/全文尚未核实，训练目标、评测协议及性能增益待补充 |
 
 ---
 
