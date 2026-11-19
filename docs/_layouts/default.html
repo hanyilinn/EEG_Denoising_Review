@@ -8,54 +8,54 @@
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
     <script src="{{ '/app.js' | relative_url }}" defer></script>
   </head>
-  <body>
+  <body id="top">
+    <a class="skip-link" href="#main-content">跳到正文</a>
     <header class="site-header">
-      <div class="header-inner">
+      <div class="header-inner site-width">
         <a class="brand" href="{{ '/' | relative_url }}" aria-label="返回首页">
-          <span class="brand-mark" aria-hidden="true">EEG</span>
-          <span>
-            <strong>EEG Research Review</strong>
-            <small>论文 · 期刊 · 数据集</small>
-          </span>
+          <svg class="brand-mark" width="34" height="22" viewBox="0 0 34 22" aria-hidden="true">
+            <path d="M1 12h6l3-5 4 10 5-15 4 18 4-8h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <span>EEG Review</span>
         </a>
-        <a class="github-link" href="https://github.com/hanyilinn/EEG_Denoising_Review">
-          GitHub 仓库
-        </a>
+        <nav class="header-nav" aria-label="主导航">
+          <a href="#一研究论文整理-research-papers">研究论文</a>
+          <a href="#二可投稿期刊整理-publication-venues">投稿期刊</a>
+          <a href="#三数据集整理-datasets">数据集</a>
+          <a class="external-link" href="https://github.com/hanyilinn/EEG_Denoising_Review">GitHub <span aria-hidden="true">↗</span></a>
+        </nav>
       </div>
     </header>
 
-    <main class="page-shell">
-      <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">EEG RESEARCH KNOWLEDGE BASE</p>
-        <h1 id="page-title">EEG 研究论文与资源导航</h1>
-        <p>集中浏览 EEG 去噪、基础模型、智能体、下游任务、投稿期刊与常用数据集。</p>
+    <main class="site-width" id="main-content" tabindex="-1">
+      <section class="intro" aria-labelledby="page-title">
+        <h1 id="page-title">EEG Research Review</h1>
+        <p>整理脑电去噪、解码、基础模型与智能体研究，附投稿期刊与常用数据集。</p>
+        <div class="search-panel" role="search" aria-label="资源检索" hidden>
+          <label for="table-search">全站检索</label>
+          <div class="search-field">
+            <input id="table-search" type="search" placeholder="输入论文名、方法或数据集…" autocomplete="off" aria-describedby="search-status">
+            <button id="clear-search" class="clear-button" type="button" hidden>清除</button>
+          </div>
+          <p id="search-status" class="search-status" role="status"></p>
+        </div>
       </section>
 
-      <section class="search-panel" aria-label="数据检索工具">
-        <label class="search-box" for="table-search">
-          <span aria-hidden="true">⌕</span>
-          <input
-            id="table-search"
-            type="search"
-            placeholder="检索方法、论文、主题、期刊、机构或备注…"
-            autocomplete="off"
-          >
-        </label>
-        <button id="clear-search" class="clear-button" type="button" hidden>清除</button>
-        <p id="search-status" class="search-status" aria-live="polite">
-          可检索全部表格；点击表头可排序
-        </p>
-      </section>
-
-      <article class="content-card markdown-body">
-        {{ content }}
-      </article>
+      <div class="doc-layout">
+        <aside class="doc-sidebar" hidden>
+          <details class="toc" open>
+            <summary>章节目录</summary>
+          </details>
+        </aside>
+        <article class="markdown-body" aria-label="EEG 研究资料">
+          {{ content }}
+        </article>
+      </div>
     </main>
 
-    <button id="back-to-top" class="back-to-top" type="button" aria-label="返回顶部">↑</button>
-
-    <footer class="site-footer">
-      数据持续更新中 · EEG papers, venues and datasets
+    <footer class="site-footer site-width">
+      <span>EEG Review · 持续维护</span>
+      <a href="#top">返回顶部 ↑</a>
     </footer>
   </body>
 </html>
