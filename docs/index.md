@@ -193,13 +193,15 @@ title: EEG Research Review
 | 14 | DenoFlow | 2026 | 在流匹配去噪中加入SSVEP类别监督，让重建后的信号保留可解码的刺激信息，而非只优化波形误差 | [DenoFlow: Flow matching for SSVEP denoising under recorded physiological artifacts](https://doi.org/10.1016/j.knosys.2026.117288) | Knowledge-Based Systems | [代码](https://github.com/wzwvv/DenoFlow) | Huazhong University of Science and Technology | 在Nakanishi2015和SSVEP Benchmark上，用5种解码器与7种去噪基线比较，作者报告信号保真度与解码准确率均有改善；伪迹来自实录，但污染是受控叠加的，不等同于自然污染验证。2026年接收，编入2027年1月第355卷 |
 | 15 | AREMamba | 2026 | 研究EEG伪迹抑制与情感计算的统一建模，归入面向情绪识别的去噪研究；当前仅依据题名与书目信息概括研究方向 | [AREMamba: Artifact-Robust Emotion Mamba for Unified EEG Denoising and Affective Computing](https://doi.org/10.1145/3767308.3836370) | ACM Multimedia 2026 | [同名仓库](https://github.com/PaperCode-ARE/AREMamba)（仅README，未见实现代码） | Beijing University of Technology + Anhui University | Wenjia Dong、Zhijian Gong、Xueyuan Xu、Fulin Wei、Li Zhuo；pp. 1644–1653。关注去噪与下游情绪识别的联系；完整摘要/全文尚未核实，训练目标、评测协议及性能增益待补充 |
 
+相关基准：[TriX-EEG（见 1.7 EEG Benchmark）](#17-eeg-benchmark相关研究-eeg-benchmark-related-studies)在同一受控眼电污染实验中对比单通道与多通道运动想象解码，可作为检验去噪是否保留跨通道信息的参考。
+
 ---
 
 ### 1.5 EEG基础模型相关研究 (EEG Foundation Model Studies)
 
 #### 1.5.1 核心基础模型论文
 
-> 共收录 **22** 条记录
+> 共收录 **23** 条记录
 
 涵盖通用EEG表征、生成式信号恢复及包含EEG的多模态睡眠模型。SleepFM两篇不是纯EEG模型；ZUNA两篇侧重信号恢复，不应只用分类准确率与表征模型横向比较。表格按“发表时间”列升序排列，预印本与正式版本的关系在备注中说明。
 
@@ -227,6 +229,7 @@ title: EEG Research Review
 | 20 | ZUNA | 2026 | 位置感知扩散自编码EEG基础模型，利用电极坐标适配不同通道布局，通过生成式信号恢复完成超分辨率、缺失通道补全与去噪 | [ZUNA: Flexible EEG Superresolution with Position-Aware Diffusion Autoencoders](https://arxiv.org/abs/2602.18478) | Arxiv | [项目代码](https://github.com/Zyphra/zuna) | Zyphra | 原版论文，与ZUNA1.1分别收录；侧重信号恢复而非仅分类表征，评价时应同时考虑重建保真、脑信号保持与下游效用 |
 | 21 | ZUNA1.1 | 2026 | 在ZUNA基础上扩展变长EEG与任意时间—通道缺失模式的重建，支持最长30秒信号及灵活电极布局，用于去噪、通道补全和超分辨率 | [ZUNA1.1: A more flexible EEG foundation model for Denoising and Super-resolution](https://arxiv.org/abs/2607.27308) | Arxiv | [是](https://huggingface.co/Zyphra/ZUNA1.1) | Zyphra | 与原版ZUNA独立成条；同一论文已在深度学习EEG去噪方法表收录，此处从基础模型角度归档，不计作新增发现 |
 | 22 | EEG-PRIME | 2026 | 两阶段EEG基础模型：先进行带频谱增强的掩码重建预训练，再用任务语义、数据集嵌入和被试不变约束调制Q-Former，将EEG表征与文本类别原型匹配，实现跨数据集多任务解码 | [EEG-PRIME: Prototype-Aligned Representation Learning with Multi-Level Conditioning for EEG Decoding](https://arxiv.org/abs/2608.13072) | Arxiv | 未确认 | Nanyang Technological University + Southeast University | 2026-08-13预印本；在运动想象、情绪、ADHD、隐性语音及认知负荷等16个数据集上评估，并在额外2个留出数据集上测试零样本迁移；零样本结果主要支持运动想象，不能外推为所有任务均有效；论文提供的代码入口核验时返回404，代码与权重公开状态待确认 |
+| 23 | BrainPro | 2026 | 将异构电极布局映射到统一通道—脑区模板，检索通道级与脑区级空间滤波器；用实验范式线索调节共享与过程相关分支，并引导分脑区加权掩码重建 | [BrainPro: Process-conditioned Pretraining with Topographic Retrieval for Large EEG Models](https://arxiv.org/abs/2509.22050v4) | NeurIPS 2026（已接收） | [训练代码](https://github.com/yi-ding-cs/BrainPro) · [BrainPro-base权重](https://huggingface.co/dycs/BrainPro-V1) | Nanyang Technological University + Shanghai Jiao Tong University + BIFOLD + Southeast University | 2025-09-26首版，2026-11-19更新v4；在9个公开BCI基准上评估，包含运动想象、情绪识别等，并用电极缺失和消融实验检验空间对齐与过程条件预训练的作用 |
 
 #### 1.5.2 基础模型评测与适配研究
 
@@ -262,7 +265,7 @@ title: EEG Research Review
 
 ### 1.7 EEG Benchmark相关研究 (EEG Benchmark Related Studies)
 
-> 共收录 **4** 条记录
+> 共收录 **5** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -270,6 +273,7 @@ title: EEG Research Review
 | 2 | LibEER | 2024 | 面向EEG情绪识别的综合benchmark和算法库，统一数据处理、模型训练和评估流程，覆盖多种公开情绪EEG数据集与传统/深度学习方法，便于公平复现实验比较... | [LibEER: A Comprehensive Benchmark and Algorithm Library for EEG-Based Emotion Recognition](https://arxiv.org/abs/2410.09767) | Arxiv / Benchmark Library | [是](https://github.com/yi-ding-cs/LibEER) | Tsinghua University + Shanghai Jiao Tong University + Monash University | 适合放入通用EEG benchmark模块；重点不在去噪，而在情绪识别任务的标准化评估、算法复现和跨数据集比较 |
 | 3 | BrainBench | 2026 | 构建面向LLM的综合EEG理解benchmark，评估大语言模型对EEG知识、信号分析、任务理解、临床/BCI场景推理等问题的回答能力... | [BrainBench: Benchmarking Large Language Models for Comprehensive EEG Understanding](https://arxiv.org/abs/2608.04156) | Arxiv | - | - | 与EEG Agent和EEG基础模型方向关系紧密；适合作为评估LLM/agent是否具备EEG领域知识和分析能力的benchmark |
 | 4 | GCN Harmonization | 2026 | 针对不同MI-BCI数据集电极布局不一致导致的跨数据集迁移困难，提出基于GCN的信号级空间harmonization框架，将异构EEG映射到统一物理电极montage，并用EEGNet、FBCNet、ADFCNN等下游分类器验证... | [Graph convolutional network-based harmonization of EEG for cross-dataset transfer in motor imagery in BCI](https://iopscience.iop.org/article/10.1088/1741-2552/ae9344) | Journal of Neural Engineering | - | Singapore Institute of Technology | 适合作为跨数据集MI-BCI benchmark/数据标准化方向参考；强调在信号层解决电极布局不兼容，并报告harmonized EEG可改善跨数据集迁移和目标域微调表现 |
+| 5 | TriX-EEG | 2026 | 从信号保真度、伪迹去除忠实度、解释可靠性三个层面评估去噪器；区分残留伪迹与误删神经信号，并用下游解码验证指标的实际意义 | [Beyond Reconstruction: A Unified Framework for Trustworthy and Explainable EEG Artifact Removal Evaluation](https://arxiv.org/abs/2611.21781) | arXiv（预印本） | [评测代码](https://github.com/Analytics-Everywhere-Lab/TriX-EEG) | University of New Brunswick + Austrian Institute of Technology + DFKI + FPT University + Singapore Institute of Technology | 在眼电、肌电及运动伪迹基准上评估9种去噪器；BCI Competition IV 2a受控眼电污染实验中，部分方法改善单通道运动想象解码，但逐通道处理22通道后，没有方法提高FBCSP的平均macro-F1。完整评测依赖干净参考和已知伪迹；另见[去噪与下游任务](#14-eeg去噪结合下游任务的研究-eeg-denoising-with-downstream-tasks) |
 
 ---
 
