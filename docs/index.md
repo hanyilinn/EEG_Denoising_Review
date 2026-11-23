@@ -173,7 +173,7 @@ title: EEG Research Review
 
 ### 1.4 EEG去噪结合下游任务的研究 (EEG Denoising with Downstream Tasks)
 
-> 共收录 **15** 条记录
+> 共收录 **16** 条记录
 
 | 序号 | 名称 | 发表时间 | 主要思路 | 文章名称 | 发表期刊 | 开源 | 作者单位 | 备注 |
 |:---:|:---:|:---:|:---|:---|:---:|:---:|:---|:---|
@@ -192,6 +192,7 @@ title: EEG Research Review
 | 13 | SQI-GEDAI Benchmark | 2026 | 在统一无伪迹处理基线下系统比较9种自动EEG伪迹处理方法，并提出SQI引导的GEDAI，仅修正信号质量较差的通道—时间段，以减少对原始EEG的不必要改动... | [Automated Artifact Removal in EEG Age Prediction: A systematic comparison](https://arxiv.org/abs/2609.31195) | Arxiv | - | Yneuro + collaborating institutions | 在TUEG训练脑龄模型，并零目标域拟合地测试ds005385、LEMON和TDBRAIN；只有GEDAI与SQI-GEDAI在3种深度网络上稳定改善MAE和R²，其余方法平均无益或有害；SQI门控将中位修改比例由74.78%降至42.80%，说明伪迹处理必须用目标下游任务验证 |
 | 14 | DenoFlow | 2026 | 在流匹配去噪中加入SSVEP类别监督，让重建后的信号保留可解码的刺激信息，而非只优化波形误差 | [DenoFlow: Flow matching for SSVEP denoising under recorded physiological artifacts](https://doi.org/10.1016/j.knosys.2026.117288) | Knowledge-Based Systems | [代码](https://github.com/wzwvv/DenoFlow) | Huazhong University of Science and Technology | 在Nakanishi2015和SSVEP Benchmark上，用5种解码器与7种去噪基线比较，作者报告信号保真度与解码准确率均有改善；伪迹来自实录，但污染是受控叠加的，不等同于自然污染验证。2026年接收，编入2027年1月第355卷 |
 | 15 | AREMamba | 2026 | 研究EEG伪迹抑制与情感计算的统一建模，归入面向情绪识别的去噪研究；当前仅依据题名与书目信息概括研究方向 | [AREMamba: Artifact-Robust Emotion Mamba for Unified EEG Denoising and Affective Computing](https://doi.org/10.1145/3767308.3836370) | ACM Multimedia 2026 | [同名仓库](https://github.com/PaperCode-ARE/AREMamba)（仅README，未见实现代码） | Beijing University of Technology + Anhui University | Wenjia Dong、Zhijian Gong、Xueyuan Xu、Fulin Wei、Li Zhuo；pp. 1644–1653。关注去噪与下游情绪识别的联系；完整摘要/全文尚未核实，训练目标、评测协议及性能增益待补充 |
+| 16 | 运动想象去噪评测（Kobayashi） | 2026 | 在统一条件下比较11种深度去噪器，并在BCI Competition IV 2a上改变眼电伪迹的空间分布和校准条件，检验去噪何时能改善运动想象分类 | [Spatial Separability, Calibration Mismatch, and the Bias of Synthetic Artifact Injection in EEG Denoising for Motor Imagery Classification](https://doi.org/10.1109/ACCESS.2026.3755135) | IEEE Access | 未核实 | Nihon University | 使用实测眼电空间分布且校准时已见同类污染时，未检出分类性能下降；用干净信号校准后遇到强污染时，去噪才显出收益。用人为设定的额区梯度注入伪迹会高估这一收益。解码不受损不代表信号已干净。 |
 
 相关基准：[TriX-EEG（见 1.7 EEG Benchmark）](#17-eeg-benchmark相关研究-eeg-benchmark-related-studies)在同一受控眼电污染实验中对比单通道与多通道运动想象解码，可作为检验去噪是否保留跨通道信息的参考。
 
